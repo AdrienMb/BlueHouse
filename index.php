@@ -6,16 +6,17 @@
 <title>Page d'accueil</title>
 </head>
 <header>
-<img src="logo-app2.png">
+<img src="logo-app2.png" class="logo">
 </header>
 <body>
 
 <form>
 <div class="formulaire1">
+  <h2>Inscrivez vous !</h2>
 <p>
     On insèrera ici les éléments de notre formulaire.
 </p>
-<input type="text" name="prenom" placeholder="Mets ton nom bitch !" />
+<input type="text" name="prenom" placeholder="Mets ton nom !" />
 
   <input type="submit" value="Valider" />
   <p>Avez vous une installation BlueHouse ?</p>
