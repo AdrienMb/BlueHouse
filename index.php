@@ -6,7 +6,7 @@
 <title>Page d'accueil</title>
 </head>
 <header>
-<img src="logo-app2.png" class="logo">
+<img src="images/logo-app2.png" class="logo">
 </header>
 <body>
 
