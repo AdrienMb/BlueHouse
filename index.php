@@ -13,7 +13,7 @@
     <?php
     try
       {
-        $bdd = new PDO('mysql:host=localhost;dbname=minichat;charset=utf8','root','');
+        $bdd = new PDO('mysql:host=localhost;dbname=bluehouse;charset=utf8','root','');
       }
       catch(Exception $e)
       {
@@ -33,8 +33,6 @@
     <input type="radio" name="installation" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
 
     <input type="radio" name="installation" value="non" id="non" /> <label for="non">Non</label>
-
-    <script type="text/javascript">alert('Tg William')</script>
   </div>
 </form>
 </body>
