@@ -9,10 +9,7 @@
   <p>
     <?php
     session_start();
-    require("Vue/header.php");
-    require("Modele/connexion.php");
-    require("Vue/commun.php");
-    include("Controleur/connexion.php");
+    require("Vue/header_deco.php");
     include("Controleur/inscription.php");
     require("Vue/footer.php");
   /* if(!isset($_SESSION["userID"])){ // L'utilisateur n'est pas connecté

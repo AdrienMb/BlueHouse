@@ -4,15 +4,12 @@ function connexion(){
   ?>
   <fieldset>
       <form method="POST" action="index.php?cible=veriff">
-          email
-          <br/>
-          <input type="text" name="identifiant"/>
-          <br/>
-          Mot de passe
-          <br/>
-          <input type="text" name="mdp"/>
-          <br/>
+        <ul>
+
+          <li><input type="text" name="identifiant" value="email" onclick="this.value='';"/></li>
+          <li><input type="text" name="mdp" value="Mot de passe" onclick="this.value='';"/></li>
           <input type='submit'/>
+        </ul>
       </form>
 <?php
 }

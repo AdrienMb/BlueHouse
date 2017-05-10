@@ -1,3 +1,5 @@
+<?php
+require("Vue/commun.php");?>
 <!DOCTYPE html>
 <LINK href="Styles/flexbox.css" rel="stylesheet" type="text/css">
 <html>
@@ -18,4 +20,5 @@
       </ul>
 
     </header>
+
 </html>

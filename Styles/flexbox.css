@@ -27,6 +27,9 @@ header{
      background-color: white;
 
 }
+ul,li,form,fieldset,html,body{
+   border: 0px;
+}
 fieldset
    {
       border: 0px;

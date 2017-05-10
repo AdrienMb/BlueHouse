@@ -12,7 +12,7 @@
             <div id="tete">
             </div>
 
-            <hr/>
+
 
             <div id="corps">
 
@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-            <hr />
+            
 
             <div id="pied">
             </div>
