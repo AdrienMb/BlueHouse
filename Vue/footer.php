@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<LINK href="Styles/flexbox.css" rel="stylesheet" type="text/css">
+<LINK href="../Styles/flexbox.css" rel="stylesheet" type="text/css">
 <html>
 <div class="fondFooter">
 <footer>

@@ -6,12 +6,16 @@
       $tab=getInput();
       //  if(!empty($_POST['lastName']) && !empty($_POST['firstName'])){ // L'utilisateur a rempli tous les champs du formulaire
             include("Modele/utilisateurs.php");
-
+            include("Modele/user.php");
 
             $reponse = emailUnique($bdd,$_POST['email']);
             if($reponse->rowcount()==0){  // Email unique, on affiche la page
                 entree_bdd($bdd,$tab);
-                include("Vue/accueil.php");
+                $rep = get_id($bdd,$_POST['email']);
+                $ligne = $rep->fetch();
+                $_SESSION["userID"] = $ligne['id'];
+                header('Location: Controleur/accueil.php');
+                exit();
             }
             else { // Email déjà utilisé
               $erreur = "Adresse mail déjà utilisé";

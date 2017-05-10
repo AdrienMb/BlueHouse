@@ -1,14 +1,14 @@
 <?php
-require("Vue/commun.php");?>
+require("commun.php");?>
 <!DOCTYPE html>
-<LINK href="Styles/flexbox.css" rel="stylesheet" type="text/css">
+<LINK href="../Styles/flexbox.css" rel="stylesheet" type="text/css">
 <html>
     <header>
 
       <ul>
 
       <li>
-      <p> <img class="logo" src="Images/logo.png" alt="logo Blue House" /> </p></li>
+      <p> <img class="logo" src="../Images/logo.png" alt="logo Blue House" /> </p></li>
         <li><a href="#Vue générale">Vue générale</a></li>
         <li><a href="#Gestion des capteurs">Gestion des capteurs</a></li>
         <li><a href="#Statistiques">Statistiques</a></li>

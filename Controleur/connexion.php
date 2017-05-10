@@ -18,7 +18,8 @@
                     include("Vue/connexion_erreur.php");
                 } else { // mot de passe correct, on affiche la page d'accueil
                     $_SESSION["userID"] = $ligne['id'];
-                    include("Vue/accueil.php");
+                    header('Location: Controleur/accueil.php');
+                    exit();
                 }
             }
         } else { // L'utilisateur n'a pas rempli tous les champs du formulaire

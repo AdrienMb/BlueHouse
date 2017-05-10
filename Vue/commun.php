@@ -1,6 +1,7 @@
 <div class="fondForm">
 <?php
 function connexion(){
+  ob_start();
   ?>
   <fieldset>
       <form method="POST" action="index.php?cible=veriff">
@@ -12,6 +13,8 @@ function connexion(){
         </ul>
       </form>
 <?php
+$connexion = ob_get_clean();
+return $connexion;
 }
 
 // Génère le code HTML du formulaire de connexion
