@@ -4,8 +4,7 @@
     if(isset($_GET['cible']) && $_GET['cible']=="verif") { // L'utilisateur vient de valider le formulaire de connexion
 
       $tab=getInput();
-      //  if(!empty($_POST['lastName']) && !empty($_POST['firstName'])){ // L'utilisateur a rempli tous les champs du formulaire
-            include("Modele/utilisateurs.php");
+      //  if(!empty($_POST['lastName']) && !empty($_POST['firstName'])){ // L'utilisateur a rempli tous les champs du formulair
             include("Modele/user.php");
 
             $reponse = emailUnique($bdd,$_POST['email']);

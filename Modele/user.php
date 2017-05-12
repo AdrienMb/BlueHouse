@@ -31,10 +31,15 @@
         $reponse = $bdd->query('SELECT COUNT(*) AS ct  FROM user WHERE email="'.$email.'"');
         return $reponse;
     }
-
-    function get_nameSexeUsingId($bdd,$id){
-        $reponse = $bdd->query('SELECT firstName,lastName,sexe FROM user WHERE id="'.$id.'"');
+    function emailUnique($bdd,$email){
+        $reponse = $bdd->query('SELECT id FROM user WHERE email="'.$email.'"');
         return $reponse;
+    }
+
+    function entree_bdd($bdd,$tab){
+      $req=$bdd->prepare('INSERT INTO user(lastName, firstName, sexe, phoneNumber, email, password, dateOfBirth, idHouse) VALUES(?,?,?,?,?,?,?,?)');
+      $req->execute($tab);
+      return $req;
     }
 
 ?>
