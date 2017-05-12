@@ -27,6 +27,6 @@
             include("Vue/connexion_erreur.php");
         }
     } else { // La page de connexion par défaut
-    include("../Vue/non_connecte_connexion.php");
+    include("Vue/non_connecte_connexion.php");
     }
 ?>
