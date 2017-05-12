@@ -32,5 +32,9 @@
         return $reponse;
     }
 
+    function get_nameSexeUsingId($bdd,$id){
+        $reponse = $bdd->query('SELECT firstName,lastName,sexe FROM user WHERE id="'.$id.'"');
+        return $reponse;
+    }
 
 ?>

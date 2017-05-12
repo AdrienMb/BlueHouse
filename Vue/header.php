@@ -12,7 +12,7 @@ require("commun.php");?>
         <li><a href="#Vue générale">Vue générale</a></li>
         <li><a href="#Gestion des capteurs">Gestion des capteurs</a></li>
         <li><a href="#Statistiques">Statistiques</a></li>
-        <li><a href="#Notes">Notes</a></li>
+        <li><a href="../Vue/message.php">Notes</a></li>
         <li><a href="#Assistance">Assistance</a></li>
         <li class="deco"><a href="#Déconnexion">Déconnexion</a></li>
 
