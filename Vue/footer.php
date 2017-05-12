@@ -7,7 +7,7 @@
 
          <li><a href="Vue/mentionsLegales.html">Mentions légales</a></li>
          <li><a href="#A propos">A propos</a></li>
-         <li><a href="#Politique de confidentialités">Politique de confidentialités</a></li>
+         <li><a href="Vue/politiqueDeConfidentialite.html">Politique de confidentialités</a></li>
 
          </ul>
 </footer>
