@@ -1,6 +1,6 @@
 
 
-ul {
+.ul_message {
     background: grey;
     padding: 20px;
     height: 50%;
@@ -10,7 +10,7 @@ ul {
 }
 
 
-ul li {
+.ul_li_message {
     background: #CED1DB;
     margin: 5px;
     list-style-type: decimal;

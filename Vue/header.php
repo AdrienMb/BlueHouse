@@ -12,7 +12,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/vue/commun.php");?>
         <li><a href="#Vue générale">Vue générale</a></li>
         <li><a href="../controleur/gestion_capteurs.php">Gestion des capteurs</a></li>
         <li><a href="#Statistiques">Statistiques</a></li>
-        <li><a href="../Vue/message.php">Notes</a></li>
+        <li><a href="/github/bluehouse/Controleur/message.php">Notes</a></li>
         <li><a href="#Assistance">Assistance</a></li>
         <li class="deco"><a href="#Déconnexion">Déconnexion</a></li>
 

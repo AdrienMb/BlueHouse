@@ -9,11 +9,11 @@
   <p>
     <?php
     session_start();
-    require("../Vue/header.php");
+    require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
     echo "vous êtes connecté";
     $id = $_SESSION['userID'];
     echo ".$id.";
-    require("../Vue/footer.php");
+    require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
     ?>
 
 </form>

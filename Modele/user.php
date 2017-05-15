@@ -1,5 +1,5 @@
 <?php
-    require("connexion.php");
+    require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/connexion.php");
 
 
     function get_idHouse($bdd,$email){
