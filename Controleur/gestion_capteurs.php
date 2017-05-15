@@ -9,13 +9,13 @@ include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/footer.php");
 <html>
     <body>
 
-      <ul
+      <ul>
         <?php
         session_start();
         $id = $_SESSION['userID'];
-        $id_house=get_idHouse($bdd,$id);
-        $sth=get_rooms($bdd,$id_house);
-                $test=get_rooms($bdd,$id_house);
+        $rep=get_idHouse($bdd,$id);
+        $idh = $rep->fetch();
+        $test=get_rooms($bdd,$idh['idHouse']);
       /*  while($result = $sth->fetch(PDO::FETCH_ASSOC))
         {
 

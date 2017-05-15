@@ -12,7 +12,6 @@
     require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
     echo "vous êtes connecté";
     $id = $_SESSION['userID'];
-    echo ".$id.";
     require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
     ?>
 
