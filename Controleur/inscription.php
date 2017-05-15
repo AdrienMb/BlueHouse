@@ -5,7 +5,7 @@
 
       $tab=getInput();
       //  if(!empty($_POST['lastName']) && !empty($_POST['firstName'])){ // L'utilisateur a rempli tous les champs du formulair
-            include("Modele/user.php");
+            include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/user.php");
 
             $reponse = emailUnique($bdd,$_POST['email']);
             if($reponse->rowcount()==0){  // Email unique, on affiche la page
@@ -18,7 +18,7 @@
             }
             else { // Email déjà utilisé
               $erreur = "Adresse mail déjà utilisé";
-              include("Vue/inscription_erreur.php");
+              include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/inscription_erreur.php");
             }
         //}
         /*  else { // L'utilisateur n'a pas rempli tous les champs du formulaire
@@ -27,6 +27,6 @@
         }*/
     }
     else { // La page de connexion par défaut
-        include("Vue/non_connecte.php");
+        include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/non_connecte.php");
     }
 ?>

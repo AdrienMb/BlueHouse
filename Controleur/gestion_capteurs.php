@@ -1,9 +1,11 @@
 <?php
-require("../vue/commun.php");
-require("../modele/room.php")
+include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/header.php");
+require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/vue/commun.php");
+require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
+include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/footer.php");
 ?>
 <!DOCTYPE html>
-<LINK href="../Styles/flexbox.css" rel="stylesheet" type="text/css">
+<LINK href="/github/bluehouse/Styles/flexbox.css" rel="stylesheet" type="text/css">
 <html>
     <body>
 

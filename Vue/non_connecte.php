@@ -1,4 +1,4 @@
 <?php
     $menu = formulaire();
-    include 'gabarit.php';
+    include ($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/gabarit.php');
 ?>
