@@ -28,7 +28,7 @@ header{
 
 }
 ul,li,form,fieldset,html,body{
-   border: 0px;
+   border-size: 0px;
 }
 fieldset
    {
