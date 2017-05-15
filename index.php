@@ -12,6 +12,7 @@
     require("Vue/header_deco.php");
     include("Controleur/inscription.php");
     require("Vue/footer.php");
+
   /* if(!isset($_SESSION["userID"])){ // L'utilisateur n'est pas connecté
         include("Controleur/inscription.php"); // On utilise un controleur secondaire pour éviter d'avoir un fichier index.php trop gros
     } else { // L'utilisateur est connecté*/
