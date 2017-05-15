@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<link rel="stylesheet" type="text/css" href="/github/bluehouse/styles/style.css" />
 <html>
 <head>
   <title>Page d'accueil</title>
@@ -9,10 +9,9 @@
   <p>
     <?php
     session_start();
-    require("Vue/header_deco.php");
-    include("Controleur/inscription.php");
-    require("Vue/footer.php");
-
+    require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/header_deco.php");
+    include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Controleur/inscription.php");
+    require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/footer.php");
   /* if(!isset($_SESSION["userID"])){ // L'utilisateur n'est pas connecté
         include("Controleur/inscription.php"); // On utilise un controleur secondaire pour éviter d'avoir un fichier index.php trop gros
     } else { // L'utilisateur est connecté*/

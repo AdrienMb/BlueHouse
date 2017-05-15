@@ -1,6 +1,6 @@
 <?php
-require("commun.php");
-require("../modele/room.php")
+require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/vue/commun.php");
+require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php")
 ?>
 <!DOCTYPE html>
 <LINK href="../Styles/flexbox.css" rel="stylesheet" type="text/css">

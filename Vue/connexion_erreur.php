@@ -18,5 +18,5 @@
     $menu = ob_get_clean();
     $contenu = "<h2>Erreur dans le formulaire de connexion</h2>".$erreur;
     echo $contenu;
-    include 'gabarit.php';
+    include  ($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/gabarit.php');
 ?>
