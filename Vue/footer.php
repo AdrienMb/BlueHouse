@@ -5,9 +5,9 @@
 <footer>
          <ul>
 
-         <li><a href="Vue/mentionsLegales.html">Mentions légales</a></li>
+         <li><a href="/github/bluehouse/Vue/mentionsLegales.html">Mentions légales</a></li>
          <li><a href="#A propos">A propos</a></li>
-         <li><a href="Vue/politiqueDeConfidentialite.html">Politique de confidentialités</a></li>
+         <li><a href="/github/bluehouse/Vue/politiqueDeConfidentialite.html">Politique de confidentialités</a></li>
 
          </ul>
 </footer>
