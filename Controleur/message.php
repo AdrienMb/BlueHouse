@@ -8,7 +8,6 @@ session_start();
 $id = $_SESSION['userID'];
 $rep=get_idHouse($bdd,$id);
 $idh = $rep->fetch();
-echo $idh['idHouse'];
 $answer = get_messagesWithTitleAndIdAndDate($bdd,$idh['idHouse']);
 ?>
 <div class="ul_message">
