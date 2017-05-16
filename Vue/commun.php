@@ -6,9 +6,9 @@ function connexion(){
   <fieldset>
       <form method="POST" action="index.php?cible=veriff">
         <ul>
-
-          <li><input type="text" name="identifiant" value="email" onclick="this.value='';"/></li>
-          <li><input type="text" name="mdp" value="Mot de passe" onclick="this.value='';"/></li>
+          <li><input type="text" name="identifiant"  value="email" onclick='javascript:this.value = "";' /></li>
+          <li><input type="text" name="mdp" value="Mot de passe" onclick='javascript:this.value = "";this.type="password"' /></li>
+          
           <input type='submit'/>
         </ul>
       </form>
@@ -46,7 +46,7 @@ function formulaire(){
                 <br/>
                 Mot de passe
                 <br/>
-                <input type="text" name="password"/>
+                <input type="password" name="password"/>
                 <br/>
                 Date d'anniversaire
                 <br/>
@@ -69,30 +69,58 @@ function getInput(){
   $tab=array($_POST['lastName'], $_POST['firstName'], $_POST['sexe'], $_POST['phoneNumber'], $_POST['email'], $_POST['password'], $_POST['dateOfBirth'], $_POST['idHouse']);
   return $tab;
 }
-
-function message_writing(){
-  ob_start();
-  ?><div class="formulaire_message">
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-      <fieldset>
-          <form method="POST" action="/github/bluehouse/Controleur/message.php">
-              <input type="text" name="title" value="Votre titre..." onclick="this.value='';"/>
-              <br/>
-              <TEXTAREA name="message" rows=4 cols=40 onclick="this.value='';">Votre message...</TEXTAREA>
-              <br/>
-              <input type='submit'/>
-          </form>
-      </fieldset>
-    </div>
-  <?php
-  $message_writing = ob_get_clean();
-  return $message_writing;
+// Génère le code HTML de l'entête
+/*
+function entete($titre){
+    ob_start();
+    ?>
+        <h1>
+            <?php echo($titre);?>
+        </h1>
+    <?php
+    $entete = ob_get_clean();
+    return $entete;
 }
+// Génère le code HTML du menu
+// le lien associé à l'étape courante est mis en couleur //<input type="int" name="insexe" value="0" id="oui"  /> <label for="oui">Homme</label>
+//<input type="int" name="insexe" value="1" id="non" /> <label for="non">Femme</label>**/
+/*
+function menu($etape){
+    ob_start();
+    ?>
+        <h2>Navigation</h2>
+        <br/>
+        <ul>
+            <?php
+                if($etape=="accueil"){
+                    echo('<li><a href="index.php?cible=accueil"><span class="selection">Accueil</span></a></li>');
+                } else {
+                    echo('<li><a href="index.php?cible=accueil">Accueil</a></li>');
+                }
 
+                for($i=1;$i<4;$i++){
+                    if($etape=="etape".$i){
+                        echo('<li><a href="index.php?cible=etape'.$i.'"><span class="selection">Étape '.$i.'</span></a></li>');
+                    } else {
+                        echo('<li><a href="index.php?cible=etape'.$i.'">Étape '.$i.'</a></li>');
+                    }
+                }
+                echo '<br/><li><a href="index.php?cible=deconnexion">Deconnexion</a></li>';
+            ?>
+        </ul>
+    <?php
+    $menu = ob_get_clean();
+    return $menu;
+}
+// Génère le code HTML du pied de page
+// même code pour toutes les pages
+function pied(){
+    ob_start();
+    ?>
+        <span style="font-style:italic;">Pied de page</span>
+    <?php
+    $pied = ob_get_clean();
+    return $pied;
+}*/
 ?>
 </div>
