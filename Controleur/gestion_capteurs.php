@@ -5,6 +5,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
 ?>
 <!DOCTYPE html>
 <LINK href="/github/bluehouse/Styles/flexbox.css" rel="stylesheet" type="text/css">
+  <LINK href="/github/bluehouse/Styles/gestion_capteurs.css" rel="stylesheet" type="text/css">
 <html>
     <body>
 
@@ -18,8 +19,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
         $i=-1;
         while($result = $test->fetch(PDO::FETCH_ASSOC))
         {
-          $piece=$test->fetch();
-          $pieces[] =  $piece['name'];
+          $pieces[] =  $result['name'];
           $i = $i+1;
         }
         for($i; $i>=0; $i--)
