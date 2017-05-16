@@ -41,6 +41,7 @@ for($i; $i>=0; $i--)
 <?php
 if(!empty($_POST['title']) && !empty($_POST['message'])){
   input_message($bdd,$id,$_POST['title'], $_POST['message'], $idh['idHouse']);
+  header('Location: message.php');
 }
 $answer -> closeCursor();
 
