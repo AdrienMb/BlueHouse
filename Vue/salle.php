@@ -1,5 +1,5 @@
 <?php
-
-    echo("Bienvenu dans : ".$_GET['idsalle']);
+    $nomSalle=$_GET['idsalle'];
+    echo("Bienvenu dans : ".$nomSalle."<br/>");
 
 ?>
