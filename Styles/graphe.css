@@ -1,0 +1,29 @@
+#placeholder .button {
+	position: absolute;
+	cursor: pointer; margin-right: -98px;
+}
+#placeholder div.button {
+	font-size: smaller; color: #999;
+	background-color: #eee; padding: 3px;
+	box-shadow: 0px 0px 5px #777;
+	-moz-box-shadow: 0px 0px 5px #777;
+	-webkit-box-shadow: 0px 0px 5px #777;
+}
+#placeholder div.button:active {
+	padding: 2px;  margin: 1px -97px 1px 1px;
+	box-shadow: 0px 0px 7px #777;
+	-moz-box-shadow: 0px 0px 7px #777;
+	-webkit-box-shadow: 0px 0px 7px #777;
+}
+#placeholder{
+	width:410px; height: 250px; padding: 5px; margin: 5px;
+	box-shadow: 1px 1px 5px #777;
+	-moz-box-shadow: 1px 1px 5px #777;
+	-webkit-box-shadow: 1px 1px 5px #777;
+}
+#page{ width:510px; height: 270px; margin: 0 auto; }
+#miniature{
+	float: left; width:400px;
+	height:100px; margin: 0 0 0 20px;
+}
+#overview{ float: left; width:400px; height:100px; }
