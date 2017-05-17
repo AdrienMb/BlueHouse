@@ -131,9 +131,10 @@ footer li a {
 }
 .fondFooter{
   position: fixed;
+  bottom: 0;
   margin-top: -65px;
   width:200%;
-  height:70%;
+  height:70px;
   left: -50%;
   background-color:white;
   margin-bottom: 0px;
