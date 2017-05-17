@@ -129,6 +129,7 @@ footer li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+/*
 .fondFooter{
   position: fixed;
   bottom: 0;
@@ -136,10 +137,9 @@ footer li a {
   width:200%;
   height:70px;
   left: -50%;
-  background-color:white;
   margin-bottom: 0px;
 
-}
+}*/
 footer {
   position: fixed;
   bottom: 0;
