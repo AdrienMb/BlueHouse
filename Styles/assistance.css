@@ -4,7 +4,7 @@ form {
     width: 400px;
     /* Pour voir les limites du formulaire */
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 1px solid grey;
     border-radius: 1em;
     font-family: trebuchet;
 }
@@ -17,7 +17,7 @@ label {
     display: inline-block;
     width: 90px;
     text-align: right;
- 
+
 }
 input, textarea {
     /* Afin de s'assurer que tous les champs textuels utilisent la même police
@@ -80,16 +80,19 @@ h3 {
 }
 .faq {
     margin: 30 auto;
-    width: 400px;
+    width:60%;
+    left: 50%;
+    transform: translate(+30%);
     /* Pour voir les limites du formulaire */
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 1px solid grey;
     border-radius: 1em;
-    font-family: trebuchet;
 }
+.message{
+  width:25%;
+  margin: auto;
 
-
-
-
-
-
+}
+.fondAssistance{
+  background-color: #C4D8D5;
+}

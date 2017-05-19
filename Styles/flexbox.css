@@ -1,8 +1,9 @@
 html, body {
+  min-height:100%;
  margin:0;
  padding:0;
  }
-body {
+.acceuil {
   padding:0;
  font-family: Verdana, sans-serif;
  background-size: cover;
@@ -12,8 +13,10 @@ body {
   margin-bottom: 10px;
 
 
-         background-image:url(../images/formulaire.jpg);
 
+
+
+    background-image:url(../images/formulaire.jpg);
  }
  .fondForm{
  }
@@ -38,7 +41,7 @@ fieldset
     width:100px;
     height:55px;
 }
-ul {
+.ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -46,13 +49,13 @@ ul {
     overflow: hidden;
     font-family: trebuchet MS, arial, verdana;
 }
-li {
+.li {
     display: inline;
      float: left;
 }
 
 
-li a {
+  .li a {
     color: #666;
     display: block;
 
@@ -129,17 +132,18 @@ footer li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-/*
+
 .fondFooter{
   position: fixed;
   bottom: 0;
+    background-color: white;
   margin-top: -65px;
   width:200%;
   height:70px;
   left: -50%;
   margin-bottom: 0px;
 
-}*/
+}
 footer {
   position: fixed;
   bottom: 0;
@@ -149,7 +153,13 @@ footer {
   transform: translate(-50%);
   margin-bottom: 0px;
 }
+.footer2 {
+  position: relative;
+  bottom: 0 ;
+  height: 70px;
+  visibility: hidden;
 
+}
 footer li a:hover {
     background-color: #e7e7e7;
 

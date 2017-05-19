@@ -6,6 +6,7 @@
   <title>Accueil</title>
 </head>
 <body>
+  <div class="accueil">
   <p>
     <?php
     session_start();
@@ -16,5 +17,6 @@
     ?>
 
 </form>
+</div>
 </body>
 </html>
