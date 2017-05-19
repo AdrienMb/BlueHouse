@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../Styles/style.css" />
+<link rel="stylesheet" type="text/css" href="../Styles/flexbox.css" />
 <html>
 <head>
   <title>Accueil</title>
