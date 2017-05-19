@@ -2,8 +2,7 @@
 <LINK href="/github/bluehouse/Styles/assistance.css" rel="stylesheet" type="text/css">
   <?php
   require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
-  require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
-  ?>
+?>
 <html>
 
     <head>
@@ -16,9 +15,12 @@
 
 
     <body>
+      <div class="fondAssistance">
     <h1> Assistance </h1>
     <h2> Un message à nous transmettre ? </h2>
+<div class="message">
     <form action="/ma-page-de-traitement" method="post">
+
     <div>
         <label for="nom">Nom :</label>
         <input type="text" id="nom" />
@@ -36,12 +38,12 @@
     </div>
 
 </form>
-
+</div>
      <h1> F.A.Q </h1>
 
 
      <div class="faq">
-     <font face="trebuchet">
+
 
      <B><i>Comment faire en cas de panne de courant ? </i></B> <br/>
      <ul><li><p> <B>Un onduleur</B> pour prévenir les pannes de courant ! <br/>Ce dispositif très simple permet de protéger les appareils électroniques des pannes en basculant sur une petite batterie de secours en quelques microsecondes.Celle-ci emmagasine assez d’énergie pour faire tenir un appareil une dizaine de minutes après une panne.</p></li><br/>
@@ -62,11 +64,14 @@
 
       <B><i> L'installation est-elle longue?</B></i><br/>
       <p>Une programmation et une supervision ne se font qu'en <B>une journée</B> grâce au savoir-faire de BlueHouse. L'installation des composants se fait en parallèle de l'installation électrique, ou de la rénovation. Elle dure donc le même laps de temps que celle-ci.</p>
-      </font>
+
 
 
      </div>
-
+     <?php
+     require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
+     ?>
+   </div>
      </body>
 
 </html>
