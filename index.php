@@ -2,6 +2,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="/github/bluehouse/styles/style.css" />
 <link rel="stylesheet" type="text/css" href="/github/bluehouse/styles/flexbox.css" />
+<link rel="stylesheet" type="text/css" href="/github/bluehouse/Styles/fond.css" />
 <html>
 <head>
   <title>Page d'accueil</title>
