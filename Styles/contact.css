@@ -1,9 +1,8 @@
 
 
 .ul_message {
-    background: grey;
+    background:#C4D8D5;
     padding: 20px;
-    height: 50%;
     width: 50%;
     margin : auto;
     border-radius: 10px;
@@ -11,7 +10,7 @@
 
 
 .ul_li_message {
-    background: #CED1DB;
+    border: 1px solid grey;
     margin: 5px;
     padding:8px 8px;
     border-radius: 5px;

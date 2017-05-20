@@ -2,6 +2,9 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../Styles/style.css" />
 <link rel="stylesheet" type="text/css" href="../Styles/flexbox.css" />
+<?php
+  require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
+  ?>
 <html>
 <head>
   <title>Accueil</title>
@@ -11,7 +14,7 @@
   <p>
     <?php
     session_start();
-    require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
+  
     echo "vous êtes connecté";
     $id = $_SESSION['userID'];
     require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');

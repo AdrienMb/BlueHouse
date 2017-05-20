@@ -3,7 +3,6 @@
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/message.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/user.php");
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
 session_start();
 include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/dataSensor.php");
@@ -85,5 +84,5 @@ while($n_sensor >= 0){
 </div>
 <?php
 }
-
+require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
  ?>

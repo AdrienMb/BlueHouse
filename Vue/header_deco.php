@@ -5,9 +5,9 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/commun.php");?>
 <html>
     <header>
 
-      <ul>
+      <ul class="ul">
 
-      <li>
+      <li class="li">
       <p> <img class="logo" src="Images/logo.png" alt="logo Blue House" /> </p></li>
         <div class="deco">
 

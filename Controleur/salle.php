@@ -4,7 +4,6 @@ session_start();
 $id=$_SESSION['userID'];
  ?>
 <br/>
-
 <?php
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/salle.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
@@ -22,9 +21,6 @@ foreach($sensors as $i){
     $donnees=$capteurs['data'];
     include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/affiche_capteurs.php");
 }
-?>
-
-<?php
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/formulaire_capteur.php");
 
 
