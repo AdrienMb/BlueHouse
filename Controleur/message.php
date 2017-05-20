@@ -3,7 +3,6 @@
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/message.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/user.php");
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
 session_start();
 $id = $_SESSION['userID'];
 $rep=get_idHouse($bdd,$id);
@@ -43,5 +42,5 @@ if(!empty($_POST['title']) && !empty($_POST['message'])){
   header('Location: message.php');
 }
 $answer -> closeCursor();
-
+require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
  ?>
