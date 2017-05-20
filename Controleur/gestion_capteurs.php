@@ -3,6 +3,7 @@ include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/header.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/user.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
 ?>
+<div class="fond_gestion">
 <!DOCTYPE html>
 <LINK href="/github/bluehouse/Styles/flexbox.css" rel="stylesheet" type="text/css">
   <LINK href="/github/bluehouse/Styles/gestion_capteurs.css" rel="stylesheet" type="text/css">
@@ -22,6 +23,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
           $pieces[] =  $result['name'];
           $i = $i+1;
         }
+        echo("Pièces de la maison :</br></br>");
         for($i; $i>=0; $i--)
         {
         	$nomPiece = $pieces[$i];
@@ -38,6 +40,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
     </body>
 
 </html>
+</div>
 <?php
 include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/footer.php");
  ?>
