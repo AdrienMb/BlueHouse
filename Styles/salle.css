@@ -1,0 +1,23 @@
+.salle{
+  text-align: center;
+}
+.capteurs{
+  text-align: center;
+  border-width:1px;
+ border-style:dashed;
+ border-color:#C6C6C6;
+ width:30%;
+ margin-left: 35%;
+ padding: 5px;
+ margin-bottom: 5px;
+}
+.data{
+  margin-top: -5px;
+  font-size: 18pt;
+}
+.date{
+  color:#00A9FD;
+}
+.formulaire_capteur {
+  text-align: center;
+}

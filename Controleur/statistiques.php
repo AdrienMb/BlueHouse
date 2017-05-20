@@ -85,5 +85,3 @@ while($n_sensor >= 0){
 <?php
 }
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
-
- ?>

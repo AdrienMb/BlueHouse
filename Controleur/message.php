@@ -3,6 +3,7 @@
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/message.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/user.php");
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
+
 session_start();
 $id = $_SESSION['userID'];
 $rep=get_idHouse($bdd,$id);
@@ -34,6 +35,7 @@ for($i; $i>=0; $i--)
   require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/message.php");
 }
   require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/formulaire_message.php");
+  require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
     ?>
 </div>
 <?php
