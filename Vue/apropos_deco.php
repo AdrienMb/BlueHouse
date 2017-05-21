@@ -73,9 +73,15 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer_deco.php');
     <h2>Notre equipe:<h2>
     </center>
         <div class="equipe">
-          <li><p> <img class="logo" src="../Images/philippe.jpg" alt="phiphi" /> </p></li>
+          <p> <img src="/github/bluehouse/Images/philippe.jpg" alt="Philippe" />
+          <img src="/github/bluehouse/Images/adrien.jpg" alt="Adrien" />
+          <img src="/github/bluehouse/Images/constance.jpg" alt="Constance" />
+          <img src="/github/bluehouse/Images/le_boss.jpg" alt="William" />
+          <img src="/github/bluehouse/Images/camille.jpg" alt="Camille" />
+          <img src="/github/bluehouse/Images/estelle.jpg" alt="Estelle" /> </p>
         </div>
-      <h1> de l'espace</br></br></br></h1>
+
+
   </body>
 
 </html>
