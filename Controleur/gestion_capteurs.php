@@ -32,6 +32,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
         require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/formulaire_piece.php");
         if(!empty($_POST['nomPiece'])){
           $rep=set_room($bdd,$_POST['nomPiece'],$idh['idHouse'])->fetch();
+          header('Location: gestion_capteurs.php');
         }
         ?>
 
