@@ -7,7 +7,7 @@ function connexion(){
       <form method="POST" action="index.php?cible=veriff">
         <ul>
           <li><input type="text" name="identifiant"  value="email" onclick='javascript:this.value = "";' /></li>
-          <li><input type="text" name="mdp" value="Mot de passe" onclick='javascript:this.value = "";this.type="password"' /></li>
+          <li><input type="password" name="mdp" value="Mot de passe" onclick='javascript:this.value = "";this.type="password"' /></li>
 
           <input type='submit'/>
         </ul>
@@ -34,7 +34,8 @@ function formulaire(){
                 <br/>
                 Sexe
                 <br/>
-                <input type="int" name="sexe"/>
+                <input type="radio" name="sexe" value="0"/>Homme
+                <input type="radio" name="sexe" value="1"/>Femme
                 <br/>
                 Numéro de téléphone
                 <br/>
@@ -64,7 +65,8 @@ function formulaire(){
     <?php
     $formulaire = ob_get_clean();
     return $formulaire;
-}
+}?>
+<?php
 function getInput(){
   $tab=array($_POST['lastName'], $_POST['firstName'], $_POST['sexe'], $_POST['phoneNumber'], $_POST['email'], $_POST['password'], $_POST['dateOfBirth'], $_POST['idHouse']);
   return $tab;

@@ -1,0 +1,31 @@
+.pieces {
+	 list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow: hidden;
+    font-family: trebuchet MS, arial, verdana; 
+}
+.pieces2 {
+    display: inline;
+     float: left;
+}
+
+
+.pieces2 a {
+    color:#964DB8;
+    display: block;
+    color: greys;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.pieces2 a:hover {
+    background-color: #e7e7e7;
+    
+
+}
+   
+
+

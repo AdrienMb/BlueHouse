@@ -20,13 +20,14 @@
 
                 <div id="menu">
                     <?php
-                    echo($menu);?>
+                    echo($menu);
+                    ?>
                 </div>
                 <div id="contenu">
                 </div>
             </div>
 
-            
+
 
             <div id="pied">
             </div>

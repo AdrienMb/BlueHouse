@@ -1,4 +1,5 @@
 <LINK href="/github/bluehouse/Styles/flexbox.css" rel="stylesheet" type="text/css">
+<LINK href="/github/bluehouse/Styles/statistiques.css" rel="stylesheet" type="text/css">
 <?php
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/message.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/user.php");
@@ -12,6 +13,7 @@ $idh = $rep->fetch();
 $id_house = $idh['idHouse'];
 $test=get_rooms($bdd,$idh['idHouse']);
 ?>
+<div class="pieces">
 <ul>
 <?php
 $i = 0;
@@ -26,6 +28,7 @@ while($result = $test->fetch(PDO::FETCH_ASSOC))
 }
 ?>
 </ul>
+</div>
 <?php
 if(isset($_GET['nbRoom'])){
   ?>

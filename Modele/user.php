@@ -17,8 +17,8 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/connexion.php");
         return $reponse;
     }
 
-    function get_id($bdd,$id){
-        $reponse = $bdd->query('SELECT id FROM user WHERE id="'.$id.'"');
+    function get_id($bdd,$email){
+        $reponse = $bdd->query('SELECT id FROM user WHERE email="'.$email.'"');
         return $reponse;
     }
 
