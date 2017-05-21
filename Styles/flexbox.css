@@ -30,6 +30,16 @@ header{
      background-color: white;
 
 }
+.header{
+  position:relative;
+  top:0px;
+  margin-top: -18px;
+  height:63px;
+  padding-top: 10px;
+     border: 0px;
+     background-color: white;
+
+}
 fieldset
    {
       border: 0px;
@@ -58,7 +68,6 @@ fieldset
   .li a {
     color: #666;
     display: block;
-
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -85,7 +94,7 @@ li a:hover {
     -webkit-flex-wrap : wrap;
     flex-wrap : wrap;
 
-    background-color:  #C4D8D5;
+    background-color: #C4D8D5 ;
     justify-content: space-between;
 
 }

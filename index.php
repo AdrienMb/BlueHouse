@@ -14,7 +14,7 @@
     session_start();
     require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/header_deco.php");
     include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Controleur/inscription.php");
-    require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/footer.php");
+    require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/footer_deco.php");
     ?>
 
 </form>
