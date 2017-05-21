@@ -11,7 +11,11 @@
                   $rep = get_id($bdd,$_POST['email']);
                   $ligne = $rep->fetch();
                   $_SESSION["userID"] = $ligne['id'];
-                  header('Location: /github/bluehouse/Controleur/accueil.php');
+                  echo '<script language="Javascript">
+<!--
+document.location.replace("controleur/accueil.php");
+// -->
+</script>';
                   exit();
               }
               else { // Email déjà utilisé
