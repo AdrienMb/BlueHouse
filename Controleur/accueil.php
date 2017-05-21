@@ -23,8 +23,8 @@ session_start(); ?>
     $rep_owner = get_idOwner($bdd,$id_house)->fetch();
     if($id == $rep_owner['idOwner']){
       ?>
-      <h1> Vous êtes l'administrateur </h1>
-      <div class="cadre">
+      <div class="titleadmin"> <h1> Vous êtes l'administrateur </h1> </div>
+      <div class="cadre2">
       <?php
       $rep_user = get_idUsers($bdd,$id_house)->fetch();
       $str_user = $rep_user['idUsers'];
