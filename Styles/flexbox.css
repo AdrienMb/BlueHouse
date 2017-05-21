@@ -173,3 +173,14 @@ footer li a:hover {
 
 
 }
+.apropos{
+  margin: 30 auto;
+  font-family: trebuchet, Arial ;
+	color : #818A8E ;
+	font-weight:normal;
+	font-style: italic;
+	text-align: center ;
+}
+.nhistoire{
+  background-color: #C4D8D5;
+}

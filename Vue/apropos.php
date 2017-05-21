@@ -1,6 +1,5 @@
 <?php
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
 ?>
 
 <!DOCTYPE html>
@@ -81,4 +80,7 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
       <img src="/github/bluehouse/Images/estelle.jpg" alt="Estelle" /> </p>
     </div>
   </body>
+  <?php
+  require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
+  ?>
 </html>
