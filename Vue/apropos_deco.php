@@ -1,6 +1,5 @@
 <?php
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header_deco2.php');
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer_deco.php');
 ?>
 
 <!DOCTYPE html>
@@ -68,14 +67,18 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer_deco.php');
       </h5>
       <h6><i>L'equipe BlueHouse</i></h6>
 
-    <center></div>
+    </div>
       <hr/>
+      <div class="apropos">
     <h2>Notre equipe:<h2>
-    </center>
+
         <div class="equipe">
           <li><p> <img class="logo" src="../Images/philippe.jpg" alt="phiphi" /> </p></li>
         </div>
       <h1> de l'espace</br></br></br></h1>
+    </div>
   </body>
-
+  <?php
+  require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer_deco.php');
+  ?>
 </html>

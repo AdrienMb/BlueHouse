@@ -4,7 +4,7 @@ function connexion(){
   ob_start();
   ?>
   <fieldset>
-      <form method="POST" action="index.php?cible=veriff">
+      <form method="POST" action="/github/bluehouse/index.php?cible=veriff">
         <ul>
           <li><input type="text" name="identifiant"  value="email" onclick='javascript:this.value = "";' /></li>
           <li><input type="password" name="mdp" value="Mot de passe" onclick='javascript:this.value = "";this.type="password"' /></li>

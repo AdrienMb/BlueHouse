@@ -1,6 +1,5 @@
 <?php
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
 ?>
 
 <!DOCTYPE html>
@@ -77,4 +76,7 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
         </div>
       <h1> de l'espace</br></br></br></h1>
   </body>
+  <?php
+  require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
+  ?>
 </html>
