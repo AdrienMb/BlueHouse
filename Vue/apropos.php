@@ -50,15 +50,15 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
       <hr/>
       <div class="apropos">
     <h2>Notre equipe:<h2>
-<ul>  
+<ul>
     <div class="equipe">
 
-       <li class="cadre"><img src="/github/bluehouse/Images/philippe.jpg" alt="Philippe" /></li>
-      <li class="cadre"><img src="/github/bluehouse/Images/adrien.jpg" alt="Adrien" /></li>
-       <li class="cadre"><img src="/github/bluehouse/Images/constance.jpg" alt="Constance" /></li>
-      <li class="cadre"><img src="/github/bluehouse/Images/le_boss.jpg" alt="William" /></li>
-      <li class="cadre"><img src="/github/bluehouse/Images/camille.jpg" alt="Camille" /></li>
-      <li class="cadre"><img src="/github/bluehouse/Images/estelle.jpg" alt="Estelle" /></li>
+       <li class="c"><img src="/github/bluehouse/Images/philippe.jpg" alt="Philippe" /></li>
+      <li class="c"><img src="/github/bluehouse/Images/adrien.jpg" alt="Adrien" /></li>
+       <li class="c"><img src="/github/bluehouse/Images/constance.jpg" alt="Constance" /></li>
+      <li class="c"><img src="/github/bluehouse/Images/le_boss.jpg" alt="William" /></li>
+      <li class="c"><img src="/github/bluehouse/Images/camille.jpg" alt="Camille" /></li>
+      <li class="c"><img src="/github/bluehouse/Images/estelle.jpg" alt="Estelle" /></li>
 
     </div>
     </ul>
