@@ -34,7 +34,7 @@ if(isset($_GET['nbRoom'])){
   $piece_selected = $pieces[$_GET['nbRoom']];
   $sensors_selected = $tab_sensors[$_GET['nbRoom']];
   $tab_sensors_selected = explode(" ",$sensors_selected);
-  $n_sensor = 6;
+  $n_sensor = 5;
   foreach ($tab_sensors_selected as $value){
     $n_sensor = $n_sensor-1;
     $rep3 = get_dataWithDate($bdd,$value);
