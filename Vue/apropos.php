@@ -3,31 +3,9 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
 ?>
 
 <!DOCTYPE html>
-<LINK href="/github/bluehouse/Styles/assistance.css" rel="stylesheet" type="text/css">
 <html>
   <head>
     <title>A propos</title>
-      <style>
-      /* map est utilisé une fois donc ID */
-       #map {
-        height: 400px;
-        width: 60%;
-        margin-left: 20%;
-       }
-       .nhistoire{
-         border: 6px black double;
-         border-spacing: 20px;
-         border-radius: 20%;
-         padding: 2%;
-         width: auto;
-         margin-left: 30%;
-         margin-right: 30%;
-       }
-       .equipe{
-         width: 60%;
-         margin-left: 20%;
-       }
-    </style>
   </head>
   <body>
 
@@ -67,18 +45,24 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
       </h5>
       <h6><i>L'equipe BlueHouse</i></h6>
 
-    <center></div>
-      <hr/>
-    <h2>Notre equipe:<h2>
-    </center>
-    <div class="equipe">
-      <p> <img src="/github/bluehouse/Images/philippe.jpg" alt="Philippe" />
-      <img src="/github/bluehouse/Images/adrien.jpg" alt="Adrien" />
-      <img src="/github/bluehouse/Images/constance.jpg" alt="Constance" />
-      <img src="/github/bluehouse/Images/le_boss.jpg" alt="William" />
-      <img src="/github/bluehouse/Images/camille.jpg" alt="Camille" />
-      <img src="/github/bluehouse/Images/estelle.jpg" alt="Estelle" /> </p>
+
     </div>
+      <hr/>
+      <div class="apropos">
+    <h2>Notre equipe:<h2>
+<ul>  
+    <div class="equipe">
+
+       <li class="cadre"><img src="/github/bluehouse/Images/philippe.jpg" alt="Philippe" /></li>
+      <li class="cadre"><img src="/github/bluehouse/Images/adrien.jpg" alt="Adrien" /></li>
+       <li class="cadre"><img src="/github/bluehouse/Images/constance.jpg" alt="Constance" /></li>
+      <li class="cadre"><img src="/github/bluehouse/Images/le_boss.jpg" alt="William" /></li>
+      <li class="cadre"><img src="/github/bluehouse/Images/camille.jpg" alt="Camille" /></li>
+      <li class="cadre"><img src="/github/bluehouse/Images/estelle.jpg" alt="Estelle" /></li>
+
+    </div>
+    </ul>
+        </div>
   </body>
   <?php
   require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
