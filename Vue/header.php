@@ -5,11 +5,10 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/vue/commun.php");?>
 <LINK href="../Styles/flexbox.css" rel="stylesheet" type="text/css">
 <html>
     <header>
-
       <ul class="ul">
 
-      <li class="li">
-      <p> <img class="logo" src="../Images/logo.png" alt="logo Blue House" /> </p></li>
+
+        <a href="/github/bluehouse/Controleur/accueil.php" class="logoLink"> <img class="logo" src="../Images/logo.png" alt="logo Blue House" /></a>
         <li class="li"><a href="/github/bluehouse/Controleur/accueil.php">Vue générale</a></li>
         <li class="li"><a href="/github/bluehouse/controleur/gestion_capteurs.php">Gestion des capteurs</a></li>
         <li class="li"><a href="/github/bluehouse/Controleur/statistiques.php">Statistiques</a></li>

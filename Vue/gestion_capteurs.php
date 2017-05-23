@@ -1,4 +1,4 @@
-
+<title>Gestion des capteurs</title>
 
 
 <?php

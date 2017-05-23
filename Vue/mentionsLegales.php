@@ -9,7 +9,7 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
 
         <meta charset="utf-8" />
 
-        <title>Titre</title>
+        <title>Mentions légales</title>
 
     </head>
 

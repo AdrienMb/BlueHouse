@@ -47,10 +47,13 @@ fieldset
 .logo
 {
     margin-left: 10px;
-    margin-top: -20px;
+    margin-top: -5px;
     width:100px;
     height:55px;
+    text-align: left;
+    float: left;
 }
+
 .ul {
     list-style-type: none;
     margin: 0;

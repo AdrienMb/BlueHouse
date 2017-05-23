@@ -1,4 +1,5 @@
 <LINK href="/github/bluehouse/Styles/statistiques.css" rel="stylesheet" type="text/css">
+  <title>Statistiques</title>
 <div class ="pieces2">
 <?php
   $room = $result['name'];

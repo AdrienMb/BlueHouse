@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
 ?>
 <html>
 <head>
-
+<title>Politique de confidentialité</title>
         <meta charset="utf-8" />
 
         <style>
