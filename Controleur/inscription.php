@@ -4,6 +4,7 @@
       $tab=getInput();
       //  if(!empty($_POST['lastName']) && !empty($_POST['firstName'])){ // L'utilisateur a rempli tous les champs du formulair
             include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/user.php");
+            include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/house.php");
             if(validEmail($_POST['email'])){
               $reponse = emailUnique($bdd,$_POST['email']);
               if($reponse->rowcount()==0){  // Email unique, on affiche la page
@@ -11,6 +12,10 @@
                   $rep = get_id($bdd,$_POST['email']);
                   $ligne = $rep->fetch();
                   $_SESSION["userID"] = $ligne['id'];
+                  $rep2 = get_idUsers($bdd,$_POST['idHouse']);
+                  if($rep2->rowcount()!=0){
+                    connectNewUser($bdd, $ligne['id'], $_POST['idHouse']);
+                  }
                   echo '<script language="Javascript">
 <!--
 document.location.replace("controleur/accueil.php");
