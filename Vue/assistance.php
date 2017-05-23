@@ -9,7 +9,7 @@
 
         <meta charset="utf-8" />
 
-        <title>Titre</title>
+        <title>Assistance</title>
 
     </head>
 
@@ -19,19 +19,19 @@
     <h1> Assistance </h1>
     <h2> Un message à nous transmettre ? </h2>
 <div class="message">
-    <form action="/ma-page-de-traitement" method="post">
+    <form action="/github/bluehouse/Vue/assistance.php" method="post">
 
     <div>
         <label for="nom">Nom :</label>
-        <input type="text" id="nom" />
+        <input type="text" id="nom" name ="nom"/>
     </div>
     <div>
         <label for="courriel">Courriel :</label>
-        <input type="email" id="courriel" />
+        <input type="email" id="courriel" name ="courriel"/>
     </div>
     <div>
-        <label for="message ">Message :</label>
-        <textarea id="message"></textarea>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message"></textarea>
     </div>
     <div class="button">
         <button type="submit">Envoyer votre message</button>
@@ -75,3 +75,11 @@
      </body>
 
 </html>
+
+<?php
+if(!empty($_POST['nom']) && !empty($_POST['message']) && !empty($_POST['courriel'])){
+?>  <script> alert("Message envoyé"); </script> <?php
+    header('Location: assistance.php');
+    exit();
+}
+ ?>
