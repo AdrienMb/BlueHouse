@@ -38,8 +38,11 @@ while($donnees = $rep->fetch(PDO::FETCH_ASSOC))
 <?php
 if(!empty($_POST['delete'])){
   delete_user($bdd,$_POST['delete']);
-  header("Location: /github/bluehouse/Controleur/accueilAdmin.php");
-  exit();
+  echo '<script language="Javascript">
+<!--
+document.location.replace("accueilAdmin.php");
+// -->
+</script>';
 }
 
 ?>
