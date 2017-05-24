@@ -6,8 +6,8 @@ function connexion(){
   <fieldset>
       <form method="POST" action="/github/bluehouse/index.php?cible=veriff">
         <ul class ="ul">
-          <li class ="li"><input type="text" name="identifiant"  value="email" onclick='javascript:this.value = "";' /></li>
-          <li class ="li"><input type="password" name="mdp" value="Mot de passe" onclick='javascript:this.value = "";this.type="password"' /></li>
+          <li class ="li"><input type="text" name="identifiant"  placeholder="email" /></li>
+          <li class ="li"><input type="password" name="mdp" placeholder="Mot de passe" onclick='javascript:this.type="password"' /></li>
 
           <input type='submit'/>
         </ul>
@@ -82,9 +82,9 @@ function message_writing(){
      <br/>
        <fieldset>
            <form method="POST" action="/github/bluehouse/Controleur/message.php">
-               <input type="text" name="title" value="Votre titre..." onclick="this.value='';"/>
+               <input type="text" name="title" placeholder="Votre titre..."/>
                <br/>
-               <TEXTAREA name="message" rows=4 cols=40 onclick="this.value='';">Votre message...</TEXTAREA>
+               <TEXTAREA name="message" rows=4 cols=40 placeholder="Votre message..."></TEXTAREA>
                <br/>
                <input type='submit'/>
            </form>

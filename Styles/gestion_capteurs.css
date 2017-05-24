@@ -10,12 +10,12 @@
   border-radius: 20px;
 
 }
-a,a:visited {
+.pieces a, .pieces a:visited {
   color:#1B2E8D;
   font-family: 'PT Sans', sans-serif;
   text-decoration: none;
 }
-a:hover {
+.pieces a:hover {
   color:black;
 }
 
