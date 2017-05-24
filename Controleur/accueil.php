@@ -23,8 +23,9 @@ session_start(); ?>
     $rep_owner = get_idOwner($bdd,$id_house)->fetch();
     if($id == $rep_owner['idOwner']){
       ?>
-      <div class="titleadmin"> <h1> Vous êtes l'administrateur </h1> </div>
-      <div class="cadre2">
+      <?php
+      require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/intro_accueilProp.php');
+      ?>
       <?php
       $rep_user = get_idUsers($bdd,$id_house)->fetch();
       $str_user = $rep_user['idUsers'];
@@ -32,16 +33,17 @@ session_start(); ?>
       foreach($tab_user as $value){
         $infos = get_nameSexeUsingId($bdd,$value)->fetch();
         ?>
-        <div class="Nom">
+
         <?php
-        echo $infos['lastName']." ";
-        echo $infos['firstName'];
+        require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/accueilProp.php');
         ?>
-      </div>
+
         <?php
       }
       ?>
-    </div>
+      <?php
+      require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/fin_accueilProp.php');
+      ?>
       <?php
     }
     require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
