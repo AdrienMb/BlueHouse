@@ -18,16 +18,7 @@ a,a:visited {
 a:hover {
   color:black;
 }
-.fond_gestion{
-  background-image:url(../images/formulaire.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 
-   height:50%;
-   margin:0;
-   padding: 0;
-
-}
 fieldset {
  padding:0 20px 20px 20px;
  margin-bottom:10px;

@@ -4,7 +4,7 @@
     padding: 0;
     background-color: white;
     overflow: hidden;
-    font-family: trebuchet MS, arial, verdana; 
+    font-family: trebuchet MS, arial, verdana;
 }
 .pieces2 {
     display: inline;
@@ -23,9 +23,6 @@
 
 .pieces2 a:hover {
     background-color: #e7e7e7;
-    
+
 
 }
-   
-
-
