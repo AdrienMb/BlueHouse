@@ -40,12 +40,12 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header_deco2.php');
             <h2>Notre histoire :</h2>
         </center>
     <div class="nhistoire">
-      <h5 align="justify">BlueHouse fut fondé en 2017, par 6 jeunes entrepreneurs provenant de la même école. Travaillant dans la bonne entente sur de nombreux projets depuis un certain temps, ce fut sans crainte qu'ils décidèrent de fonder la maison BlueHouse.</br></br>
+      <p align="justify">BlueHouse fut fondé en 2017, par 6 jeunes entrepreneurs provenant de la même école. Travaillant dans la bonne entente sur de nombreux projets depuis un certain temps, ce fut sans crainte qu'ils décidèrent de fonder la maison BlueHouse.</br></br>
         La maison BlueHouse est alors toujours à la recherche d'innovation, de challenge et de pérennité. En gardant cette ligne de conduite, la structure BlueHouse a décroché son premier appel d'offres par la société Domisep et réalisa alors un projet qui lança la start-up. </br><br>
         Maintenant que les fondations de la maison se sont solidifiées, BlueHouse est prêt à relever tous les défis qui lui sont réservés et est prêt à bâtir les maisons connectées de demain.</br></br>
-        Ce sera donc avec grand plaisir que BlueHouse connectera vos maisons d'avenir<br>
-      </h5>
-      <h6><i>L'equipe BlueHouse</i></h6>
+        Ce sera donc avec grand plaisir que BlueHouse connectera vos maisons d'avenir.<br>
+      </p>
+      <p><i>L'equipe BlueHouse</i></p>
 
     </div>
     <hr/>

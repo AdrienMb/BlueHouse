@@ -185,14 +185,12 @@ footer li a:hover {
 
 }
 .nhistoire{
-  background-color: #C4D8D5;
-  border: 6px black double;
   border-spacing: 20px;
-  border-radius: 20%;
-  padding: 2%;
+  border-radius: 7%;
+  padding: 20px;
   width: auto;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .c {
   display:inline
@@ -204,10 +202,9 @@ footer li a:hover {
   }
 
   .equipe{
-    width: 625px;
+    width: 50%;
     height: 408px;
-    margin-left: 30%;
-    background-color: #C4D8D5;
+    margin-left: 25%;
   }
 
   h2 {

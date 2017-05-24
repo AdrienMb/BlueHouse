@@ -1,0 +1,18 @@
+.corps {
+  padding-left: 150px;
+  padding-right: 150px;
+
+}
+a{
+  color:#00B2F3;
+}
+a:hover{
+  color:black;
+}
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+
+}
+.titre {
+  text-align: center;
+}

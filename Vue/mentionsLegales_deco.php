@@ -2,21 +2,21 @@
 <?php
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header_deco2.php');
 ?>
-<LINK href="mentionsLegales.css" rel="stylesheet" type="text/css">
+<LINK href="/github/bluehouse/Styles/mentionsLegales.css" rel="stylesheet" type="text/css">
 <html>
 
     <head>
 
         <meta charset="utf-8" />
 
-        <title>Titre</title>
+        <title>Mentions légales</title>
 
     </head>
 
 
     <body>
 
-
+<div class="corps">
 <h2>Informations légales</h2>
 <h3>1. Présentation du site.</h3>
 <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site <a href="http://www.bluehouse.com/">www.bluehouse.com</a> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
@@ -81,9 +81,9 @@ Estelle Mayer<br />
 <p>Informations personnelles : « les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
 
 
+</div>
 
-
-<body>
+</body>
 </html>
 <?php
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer_deco.php');

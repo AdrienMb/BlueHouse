@@ -3,23 +3,14 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header_deco2.php');
 ?>
 <html>
 <head>
+  <LINK href="/github/bluehouse/Styles/mentionsLegales.css" rel="stylesheet" type="text/css">
 <title>Politique de confidentialité</title>
         <meta charset="utf-8" />
 
-        <style>
 
-            body
-
-            {
-
-                background-color: #CED1DB;
-
-            }
-
-        </style>
 <body>
-
-<h1>Politique de confidentialit&eacute;.</h1>
+<div class="corps">
+<h1 class="titre">Politique de confidentialit&eacute;</h1>
 <p><strong>Introduction</strong><br />
 Devant le d&eacute;veloppement des nouveaux outils de communication, il est n&eacute;cessaire de porter une attention particuli&egrave;re &agrave; la protection de la vie priv&eacute;e.
 C'est pourquoi, nous nous engageons &agrave; respecter la confidentialit&eacute; des renseignements personnels que nous collectons.
@@ -114,6 +105,7 @@ Nous collectons les renseignements suivants :
 	la confidentialit&eacute; de vos transactions. Toutefois, comme aucun m&eacute;canisme n'offre une s&eacute;curit&eacute; maximale, une part de risque est toujours pr&eacute;sente
 	lorsque l'on utilise Internet pour transmettre des renseignements personnels.
 </p>
+</div>
 </body>
 </html>
 <?php
