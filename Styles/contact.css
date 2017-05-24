@@ -1,17 +1,94 @@
-
-
+.infos_note {
+     position:fixed;
+     left: 25%;
+     width:20%;
+     top: 100px;
+     bottom: 0;
+}
+.ligne{
+  position: fixed;
+  left:43%;
+}
 .ul_message {
-    background:#C4D8D5;
+
+    background: white;
+    border: 0px solid grey;
     padding: 20px;
-    width: 50%;
-    margin : auto;
+    width: 30%;
+    margin-left : 45%;
     border-radius: 10px;
 }
 
 
 .ul_li_message {
-    border: 1px solid grey;
-    margin: 5px;
-    padding:8px 8px;
-    border-radius: 5px;
+    border: 0px solid grey;
+
+
 }
+.infos {
+  color:#6B6C6C;
+  margin-left:20px;
+  margin-top:10px;
+}
+.titreMessage {
+  font-weight: bold;
+}
+.titreDescription {
+  width:80%;
+  font-size: 24px;
+  color:#383839;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.description {
+  width:80%;
+  font-size: 10pt;
+  padding-right:10px;
+  text-align: justify;
+
+    font-family: 'Poppins', sans-serif;
+}
+.envoye {
+  background-color: #1BA4FF;
+  color: white;
+  padding:8px 8px;
+  border-radius: 15px;
+}
+.recu{
+  background-color: 	#E5E5E5;
+  color: black;
+  padding:8px 8px;
+  border-radius: 15px;
+}
+fieldset {
+ padding:0 20px 20px 20px;
+ margin-bottom:10px;
+ border:1px solid
+	#8B8D8D;
+ }
+input, textarea, select, option {
+ background-color:
+	white;
+ }
+input, textarea, select {
+ padding:3px;
+ margin-bottom: 5px;
+ border:1px solid
+	#8B8D8D;
+ border-radius:5px;
+ width:100%;
+ float:right;
+ }
+ select {
+ margin-top:10px;
+ }
+input[type=radio] {
+ background-color:transparent;
+ border:none;
+ width:10px;
+ }
+input[type=submit], input[type=reset] {
+ width:60px;
+ margin-left:5px;
+ cursor:pointer;
+ }

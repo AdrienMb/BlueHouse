@@ -3,7 +3,7 @@
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/message.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/user.php");
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
-
+require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/infos_notes.html');
 session_start();
 $id = $_SESSION['userID'];
 $rep=get_idHouse($bdd,$id);
@@ -22,11 +22,14 @@ while ($donnees = $answer->fetch())
   $dateWritet[] = $donnees['dateWrite'];
   $titlet[] = $donnees['title'];
 	$datat[] = $donnees['data'];
+  $idt[] = $donnees['idWriter'];
   $i = $i+1;
 }
 if($i>20){$i=20;}
 for($i; $i>=0; $i--)
 {
+  if($idt[$i]==$id) {$typeMessage="envoye";}
+  else {$typeMessage="recu";}
   $firstName = $firstNamet[$i];
   $lastName = $lastNamet[$i];
   $dateWrite = $dateWritet[$i];

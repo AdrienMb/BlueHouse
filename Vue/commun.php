@@ -76,10 +76,6 @@ function message_writing(){
    ?><div class="formulaire_message">
      <br/>
     <br/>
-     <br/>
-     <br/>
-     <br/>
-     <br/>
        <fieldset>
            <form method="POST" action="/github/bluehouse/Controleur/message.php">
                <input type="text" name="title" placeholder="Votre titre..."/>
