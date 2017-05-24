@@ -18,8 +18,14 @@
                     include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/connexion_erreur.php");
                 } else { // mot de passe correct, on affiche la page d'accueil
                     $_SESSION["userID"] = $ligne['id'];
-                    header('Location: /github/bluehouse/Controleur/accueil.php');
-                    exit();
+                    if($_POST['identifiant'] == "admin@bluehouse.com"){
+                      header('Location: /github/bluehouse/Controleur/accueilAdmin.php');
+                      exit();
+                    }
+                    else{
+                      header('Location: /github/bluehouse/Controleur/accueil.php');
+                      exit();
+                    }
                 }
             }
         } else { // L'utilisateur n'a pas rempli tous les champs du formulaire

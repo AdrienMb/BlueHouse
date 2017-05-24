@@ -47,4 +47,14 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/connexion.php");
         return $reponse;
     }
 
+    function get_allUsers($bdd){
+        $reponse = $bdd->query('SELECT * FROM user');
+        return $reponse;
+    }
+
+    function delete_user($bdd,$id){
+      $reponse = $bdd->query('DELETE FROM user WHERE id="'.$id.'"');
+      return $reponse;
+    }
+
 ?>
