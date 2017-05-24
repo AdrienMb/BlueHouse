@@ -17,6 +17,7 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
             }
 
         </style>
+      </head>
 <body>
 
 <h1>Politique de confidentialit&eacute;.</h1>
@@ -118,4 +119,5 @@ Nous collectons les renseignements suivants :
 </html>
 <?php
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
+
 ?>
