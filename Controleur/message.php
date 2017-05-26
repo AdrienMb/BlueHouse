@@ -37,14 +37,18 @@ for($i; $i>=0; $i--)
 	$data = $datat[$i];
   require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/message.php");
 }
-  require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/formulaire_message.php");
+  require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/fin_accueilProp.php");
   require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
     ?>
 </div>
 <?php
 if(!empty($_POST['title']) && !empty($_POST['message'])){
   input_message($bdd,$id,$_POST['title'], $_POST['message'], $idh['idHouse']);
-  header('Location: message.php');
+  echo '<script language="Javascript">
+<!--
+document.location.replace("message.php");
+// -->
+</script>';
 }
 $answer -> closeCursor();
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
