@@ -37,6 +37,8 @@ for($i; $i>=0; $i--)
 	$data = $datat[$i];
   require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/message.php");
 }
+
+require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/formulaire_message.php");
   require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/fin_accueilProp.php");
   require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
     ?>
