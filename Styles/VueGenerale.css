@@ -1,0 +1,78 @@
+.fondDufond {
+
+    display: flex;
+    flex-wrap : wrap;
+    justify-content:center;
+
+}
+
+.BlockFlex {
+    background-color:  rgba(255, 255, 255, 0.4);
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    width: 400px;
+
+    margin: 47px;
+    border: none;
+    min-height: 40vh;
+    border-radius: 10px;
+
+
+}
+.thermometre{
+    height :20px ;
+    width :55px  ;
+    max-width: 100%;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.radiateurs{
+
+    margin-left: 120px;
+    margin-top: -170px;
+    font-size: 25px;
+}
+.ampoule {
+    height :20px ;
+    width :160px  ;
+    max-width: 100%;
+    height: auto;
+    margin-left: -5px;
+    margin-top: 40px;
+}
+.lumiere {
+    margin-left: 140px;
+    margin-right: -100px;
+    margin-top: -150px;
+    font-size: 25px;
+}
+.cadena {
+    height :20px ;
+    width :120px  ;
+    max-width: 100%;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 80px;
+}
+.porte {
+
+    margin-left: 140px;
+    margin-right: -100px;
+    margin-top: -130px;
+    font-size: 25px;
+}
+.alarme {
+    height :20px ;
+    width :130px  ;
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+.eteint {
+
+    margin-left: 170px;
+    margin-right: -100px;
+    margin-top: -90px;
+    font-size: 25px;
+}

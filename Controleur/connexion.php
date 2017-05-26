@@ -23,7 +23,7 @@
                       exit();
                     }
                     else{
-                      header('Location: /github/bluehouse/Controleur/accueil.php');
+                      header('Location: /github/bluehouse/vue/VueGenerale.php');
                       exit();
                     }
                 }
