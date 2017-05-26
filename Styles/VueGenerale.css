@@ -2,18 +2,22 @@
 
     display: flex;
     flex-wrap : wrap;
+    width:100%;
+    height:100%;
+    background-color: grey ;
     justify-content:center;
-
+    
 }
 
 .BlockFlex {
-    background-color:  rgba(255, 255, 255, 0.4);
+    background-color: #ffffff;
+    opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
     width: 400px;
-
+    height: -100px;
     margin: 47px;
     border: none;
-    min-height: 40vh;
+    min-height: 50vh;
     border-radius: 10px;
 
 
@@ -27,7 +31,7 @@
     margin-top: 40px;
 }
 .radiateurs{
-
+    font-family: Comic Sans MS,Arial;
     margin-left: 120px;
     margin-top: -170px;
     font-size: 25px;
@@ -41,6 +45,7 @@
     margin-top: 40px;
 }
 .lumiere {
+    font-family: Comic Sans MS,Arial;
     margin-left: 140px;
     margin-right: -100px;
     margin-top: -150px;
@@ -55,7 +60,14 @@
     margin-top: 80px;
 }
 .porte {
-
+    font-family: Comic Sans MS,Arial;
+    margin-left: 140px;
+    margin-right: -100px;
+    margin-top: -30px;
+    font-size: 25px;
+}
+.Volets{
+    font-family: Comic Sans MS,Arial;
     margin-left: 140px;
     margin-right: -100px;
     margin-top: -130px;
@@ -70,9 +82,69 @@
     margin-top: 80px;
 }
 .eteint {
-
+    font-family: Comic Sans MS,Arial;
     margin-left: 170px;
     margin-right: -100px;
     margin-top: -90px;
     font-size: 25px;
 }
+
+    .onoffswitch {
+        position: relative; width: 78px;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    }
+    .onoffswitch-checkbox {
+        display: none;
+    }
+    .onoffswitch-label {
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #595757; border-radius: 20px;
+    }
+    .onoffswitch-inner {
+        display: block; width: 200%; margin-left: -100%;
+        transition: margin 0.3s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+        box-sizing: border-box;
+    }
+    .onoffswitch-inner:before {
+        content: "ON";
+        padding-left: 10px;
+        background-color: #49BAD6; color: #FFFFFF;
+    }
+    .onoffswitch-inner:after {
+        content: "OFF";
+        padding-right: 10px;
+        background-color: #DBD8D8; color: #878585;
+        text-align: right;
+    }
+    .onoffswitch-switch {
+        display: block; width: 18px; margin: 6px;
+        background: #FFFFFF;
+        position: absolute; top: 0; bottom: 0;
+        right: 44px;
+        border: 2px solid #595757; border-radius: 20px;
+        transition: all 0.3s ease-in 0s; 
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px; 
+    }
+    .centre{
+        width: 60%;
+        margin-left: 70%;
+        margin-top: -14%;
+
+    }
+
+
+
+
+
+
+
+    s
