@@ -58,3 +58,9 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/connexion.php");
     }
 
 ?>
+
+<script>
+function modification(){
+  
+}
+</script>

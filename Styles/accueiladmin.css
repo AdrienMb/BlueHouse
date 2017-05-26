@@ -30,3 +30,15 @@
     border-radius: 5px;
     opacity: 0.9;
 }
+
+.acc {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.image_validate {
+  background-image:url("/github/bluehouse/Images/validate.png");
+  width: 20;
+}

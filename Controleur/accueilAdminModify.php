@@ -18,7 +18,7 @@ $rep = get_allUsers($bdd);
 
 while($donnees = $rep->fetch(PDO::FETCH_ASSOC))
 {
-  require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/accueilAdmin.php");
+  require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/accueilAdminModify.php");
 }
 
  ?>
