@@ -33,4 +33,15 @@ document.location.replace("accueilAdmin.php");
 </script>';
 }
 ?>
+<?php
+if(!empty($_POST['email'])){
+  include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/commun.php");
+  modify_bdd($bdd,$_POST['lastName'],$_POST['firstName'],$_POST['dateOfBirth'],$_POST['phoneNumber'],$_POST['email'],$_POST['idHouse'],$_POST['id']);
+  echo '<script language="Javascript">
+<!--
+document.location.replace("accueilAdmin.php");
+// -->
+</script>';
+}
+?>
 </div>

@@ -71,6 +71,7 @@ function getInput(){
   $tab=array($_POST['lastName'], $_POST['firstName'], $_POST['sexe'], $_POST['phoneNumber'], $_POST['email'], $_POST['password'], $_POST['dateOfBirth'], $_POST['idHouse']);
   return $tab;
 }
+
 function message_writing(){
    ob_start();
    ?><div class="formulaire_message">
