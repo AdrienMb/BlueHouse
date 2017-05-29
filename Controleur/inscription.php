@@ -1,8 +1,14 @@
 <?php
+require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/formulaire_inscription.php");
+
     // Controleur pour gérer le formulaire de connexion des utilisateurs
     if(isset($_GET['cible']) && $_GET['cible']=="verif") { // L'utilisateur vient de valider le formulaire de connexion
-      if(!empty($_POST['lastName']) && !empty($_POST['firstName'])&& !empty($_POST['phoneNumber'])&& !empty($_POST['email'])&& !empty($_POST['password'])&& !empty($_POST['dateOfBirth'])&& !empty($_POST['idHouse'])&& !empty($_POST['sexe']) ){
       $tab=getInput();
+      if($_POST['password']!=$_POST['password2']){
+        $erreur = "mot de passe non valide";
+        include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/inscription_erreur.php");
+      }
+      else{
       //  if(!empty($_POST['lastName']) && !empty($_POST['firstName'])){ // L'utilisateur a rempli tous les champs du formulair
             include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/user.php");
             include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/house.php");
@@ -38,12 +44,8 @@ document.location.replace("controleur/accueil.php");
             $erreur = "Veuillez remplir tous les champs :-)";
             include("Vue/connexion_erreur.php");
         }*/
-      }
-      else{
-        $erreur = "champs non remplis";
-        include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/inscription_erreur.php");
-      }
     }
+  }
     else { // La page de connexion par défaut
         include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/non_connecte.php");
     }
