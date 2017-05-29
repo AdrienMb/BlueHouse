@@ -57,4 +57,11 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/connexion.php");
       return $reponse;
     }
 
+    function modify_bdd($bdd,$lastName,$firstName,$dateOfBirth,$phoneNumber,$email,$idHouse,$id){
+      $req=$bdd->prepare('UPDATE user SET lastName=?,firstName=?,dateOfBirth=?,phoneNumber=?,email=?,idHouse=? WHERE id="'.$id.'"');
+      $tab=array($lastName,$firstName,$dateOfBirth,$phoneNumber,$email,$idHouse);
+      $req->execute($tab);
+      return $req;
+    }
+
 ?>
