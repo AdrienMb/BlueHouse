@@ -16,44 +16,45 @@
 
     <body>
       <div class="fondAssistance">
+        <div class="contact">
     <h1> Assistance </h1>
     <h2> Un message à nous transmettre ? </h2>
 <div class="message">
     <form action="/github/bluehouse/Vue/assistance.php" method="post">
 
     <div>
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name ="nom"/>
+
+        <input type="text" id="nom" placeholder="Nom"name ="nom"/>
     </div>
     <div>
-        <label for="courriel">Courriel :</label>
-        <input type="email" id="courriel" name ="courriel"/>
+
+        <input type="email" id="courriel" placeholder="Email" name ="courriel"/>
     </div>
     <div>
-        <label for="message">Message :</label>
-        <textarea id="message" name="message"></textarea>
+
+        <textarea id="message" placeholder="Votre message..."name="message"></textarea>
     </div>
     <div class="button">
-        <button type="submit">Envoyer votre message</button>
+        <input type="submit">
     </div>
 
 </form>
-</div>
-     <h1> F.A.Q </h1>
+</div></div>
+<div class="faq">
+     <h1> F.A.Q </h1></br>
 
 
-     <div class="faq">
 
 
-     <B><i>Comment faire en cas de panne de courant ? </i></B> <br/>
-     <ul><li><p> <B>Un onduleur</B> pour prévenir les pannes de courant ! <br/>Ce dispositif très simple permet de protéger les appareils électroniques des pannes en basculant sur une petite batterie de secours en quelques microsecondes.Celle-ci emmagasine assez d’énergie pour faire tenir un appareil une dizaine de minutes après une panne.</p></li><br/>
-     <li><B>Une alarme</B> SMS pour détecter les pannes de courant ! <br/>
-     À l’aide d’un simple boîtier fixé sur vos installations, vous pouvez être prévenu(e) d’une coupure de courant via SMS, quel que soit l'endroit où vous vous trouvez.Si vous êtes en déplacement vous avez ainsi la possibilité de contacter vos proches et de les informer du problème afin qu’ils s’en occupent.</li><br/></ul>
-
-     <B><i>Quel système de sécurité installer pour mes enfants ?</i></B><br/><p><ul><li><p> <B>Les détecteurs</B> de fumée et de gaz. <br/>
-     Un détecteur autonome de fumée relié à un système d’alerte dans les chambres des enfants, et des parents, peut sauver un nombre important de vies lorsqu’on sait que la plupart des incendies se déclarent la nuit.</li></p><br/>
-     <p><li><B>Protéger</B> l’accès aux endroits sensibles de la maison <br/>
-     Dans une propriété, la piscine est souvent une source d’angoisse pour les parents.Le contrôle visuel à distance, le contrôle des accès, leadétection de présence et/ou de mouvement dans l’eau, sont autant de solutions qui permettent de mieux protéger ses enfants.De la même manière, il est possible de restreindre l’accès à certaines pièces de la maison à ses enfants. Les systèmes domotiques les plus sophistiqués peuvent ainsi proposer une reconnaissance digitale pour l’ouverture d’une porte.</li></p><br/></ul>
+     <B>Comment faire en cas de panne de courant ? </B> <br/>
+     <p> <B>Un onduleur</B> pour prévenir les pannes de courant ! <br/>Ce dispositif très simple permet de protéger les appareils électroniques des pannes en basculant sur une petite batterie de secours en quelques microsecondes.Celle-ci emmagasine assez d’énergie pour faire tenir un appareil une dizaine de minutes après une panne.</p><br/>
+     <B>Une alarme</B> SMS pour détecter les pannes de courant ! <br/>
+     À l’aide d’un simple boîtier fixé sur vos installations, vous pouvez être prévenu(e) d’une coupure de courant via SMS, quel que soit l'endroit où vous vous trouvez.Si vous êtes en déplacement vous avez ainsi la possibilité de contacter vos proches et de les informer du problème afin qu’ils s’en occupent.<br/>
+</br>
+     <B><i>Quel système de sécurité installer pour mes enfants ?</i></B><br/><p><p> <B>Les détecteurs</B> de fumée et de gaz. <br/>
+     Un détecteur autonome de fumée relié à un système d’alerte dans les chambres des enfants, et des parents, peut sauver un nombre important de vies lorsqu’on sait que la plupart des incendies se déclarent la nuit.</p><br/>
+     <p><B>Protéger</B> l’accès aux endroits sensibles de la maison <br/>
+     Dans une propriété, la piscine est souvent une source d’angoisse pour les parents.Le contrôle visuel à distance, le contrôle des accès, leadétection de présence et/ou de mouvement dans l’eau, sont autant de solutions qui permettent de mieux protéger ses enfants.De la même manière, il est possible de restreindre l’accès à certaines pièces de la maison à ses enfants. Les systèmes domotiques les plus sophistiqués peuvent ainsi proposer une reconnaissance digitale pour l’ouverture d’une porte.</p><br/>
 
      <B/><i>Quels sont les nouveaux systèmes auxquels nous pouvons nous attendre très prochainement?</i></B> <br/>
 

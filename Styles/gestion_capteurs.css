@@ -46,3 +46,14 @@ input[type=submit], input[type=reset] {
  margin-left:5px;
  cursor:pointer;
  }
+ div {
+   display:inline;
+ }
+ .bton input{
+   margin-bottom: -4px;
+   height:20px;
+   width:15px;
+   display:inline;
+   background-color:transparent;
+   border:none;
+ }
