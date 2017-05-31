@@ -2,7 +2,9 @@
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/commun.php");?>
 <!DOCTYPE html>
 <LINK href="/github/bluehouse/Styles/flexbox.css" rel="stylesheet" type="text/css">
-<html>
+<html><header>
+  <a href="/github/bluehouse/index.php" class="logoLink"> <img class="logo" src="/github/bluehouse/Images/logo.png" alt="logo Blue House" /> </a>
+</header>
     <header class="header">
 
       <ul class="ul">

@@ -1,5 +1,5 @@
 <?php
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header_deco2.php');
+require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header_deco.php');
 ?>
 <html>
 <head>

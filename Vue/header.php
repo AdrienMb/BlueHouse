@@ -4,7 +4,10 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/vue/commun.php");?>
 <!DOCTYPE html>
 <LINK href="../Styles/flexbox.css" rel="stylesheet" type="text/css">
 <html>
-    <header>
+<header>
+  <li class="li"><a href="/github/bluehouse/Vue/VueGenerale.php">Vue générale</a></li>
+</header>
+    <header class="header">
       <ul class="ul">
 
 

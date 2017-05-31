@@ -2,9 +2,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" type="text/css" href="styles/base.css" />
-	<link rel="stylesheet" type="text/css" href="styles/structure.css" />
-  
+	
+
     </head>
         <div id="global">
             <div id="tete">

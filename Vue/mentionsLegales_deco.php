@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header_deco2.php');
+require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header_deco.php');
 ?>
 <LINK href="/github/bluehouse/Styles/mentionsLegales.css" rel="stylesheet" type="text/css">
 <html>
