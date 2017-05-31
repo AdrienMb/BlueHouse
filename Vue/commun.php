@@ -18,6 +18,7 @@ return $connexion;
 }
 
 // Génère le code HTML du formulaire de connexion
+
 function formulaire(){
     ob_start();
     ?><div class="formulaire1">
@@ -71,6 +72,7 @@ function getInput(){
   $tab=array($_POST['lastName'], $_POST['firstName'], $_POST['sexe'], $_POST['phoneNumber'], $_POST['email'], $_POST['password'], $_POST['dateOfBirth'], $_POST['idHouse']);
   return $tab;
 }
+
 function message_writing(){
    ob_start();
    ?><div class="formulaire_message">

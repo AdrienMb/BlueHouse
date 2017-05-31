@@ -1,4 +1,5 @@
 <LINK href="/github/bluehouse/Styles/accueiladmin.css" rel="stylesheet" type="text/css">
+  <div class="title"><h2>Page administrateur</h2></div>
 <div class="acc">
 <table>
   <caption><h1>Utilisateurs</h1></caption>

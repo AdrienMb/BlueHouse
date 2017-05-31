@@ -1,7 +1,7 @@
 <?php
 include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/header.php");
  ?>
- <LINK href="VueGenerale.css" rel="stylesheet" type="text/css">
+ <LINK href="/github/bluehouse/Styles/VueGenerale.css" rel="stylesheet" type="text/css">
  <html>
 
      <head>
@@ -17,17 +17,17 @@ include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/header.php");
 
  <div class="fondDufond">
 
-         <div class="BlockFlex">
-         <img class= "thermometre" id"thermometre" src="thermometre.png" alt="thermometre">
+         <div class="BlockFlex">:
+         <img class= "thermometre" id"thermometre" src="/github/bluehouse/Images/thermometre.png" alt="thermometre">
          <p class="radiateurs">Radiateurs allumés : 3   <br/> <br/> <br/>T° : 21°</p> </div>
 
 
          <div class="BlockFlex" >
-         <img class="ampoule" id"ampoule" src="ampoule.png" alt="ampoule">
+         <img class="ampoule" id"ampoule" src="/github/bluehouse/Images/ampoule.png" alt="ampoule">
          <p   class="lumiere"> Lumière allumés : 2   <br/> <br/> <br/>Luminosité : 30% </p> </div>
 
          <div class="BlockFlex">
-         <img class="cadena" id"cadena" src="cadena.png" alt="cadena">
+         <img class="cadena" id"cadena" src="/github/bluehouse/Images/cadena.png" alt="cadena">
          <p   class="porte"> Portes : </p>
          <div class="centre">
          <div class="onoffswitch">
@@ -54,7 +54,7 @@ include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/header.php");
          </div>
 
          <div class="BlockFlex">
-         <img class="alarme" id"alarme" src="alarme.png" alt="alarme">
+         <img class="alarme" id"alarme" src="/github/bluehouse/Images/alarme.png" alt="alarme">
          <p   class="eteint"> Alarme : </p>
          <div class="centre">
          <div class="onoffswitch">

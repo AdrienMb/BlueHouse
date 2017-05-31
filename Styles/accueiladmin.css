@@ -39,6 +39,12 @@
 }
 
 .image_validate {
-  background-image:url("/github/bluehouse/Images/validate.png");
+  background-image: url("/github/bluehouse/Images/validate.png");
   width: 20;
+}
+
+.title {
+  margin-left: 0%;
+  font-family: trebuchet,Arial;
+  color: grey;
 }

@@ -26,8 +26,9 @@ else{
 <td><input type="text" name="phoneNumber" value=<?php echo $donnees['phoneNumber']; ?> size="8"/></td>
 <td><input type="text" name="email" value=<?php echo $donnees['email']; ?> size="15"/></td>
 <td><input type="text" name="idHouse" value=<?php echo $donnees['idHouse']; ?> size="8"/></td>
-<td><input class="image_validate" type="submit" name="modify" /></td>
+<td><input class="image_validate" type="image" src="/github/bluehouse/Images/validate.png" name="modify" /></td>
 <td><input type="image" name="delete" src="/github/bluehouse/Images/delete.jpg" width="20" value=<?php echo $donnees['id']; ?> /></td>
+<input type="hidden" name="id" value=<?php echo $donnees['id']; ?> />
 </form>
 </tr>
   <?php
