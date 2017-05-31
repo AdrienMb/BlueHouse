@@ -53,7 +53,7 @@ function formulaire(){
                 <br/>
                 <input type="date" name="dateOfBirth" value="<?php echo date('Y-m-d'); ?>"/>
                 <br/>
-                Id de la maison <a href="#" class="info"><div class="infoq">?</div><span>Code recu lors de la commande</span></a>
+                Id de la maison <div class="cercle"><a href="#" class="info"><div class="infoq">?</div><span>Code reçu lors de la commande</span></a></div>
                 <br/>
                 <input type="text" name="idHouse"/>
                 <br/>
