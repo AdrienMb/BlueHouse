@@ -22,19 +22,19 @@ function formulaire(){
                 <br/>
                 Numéro de téléphone
                 <br/>
-                <input type="text" name="phoneNumber" onblur="verifTel(this)"/>
+                <input type="text" name="phoneNumber" onkeypress="verifTel(this)"/>
                 <br/>
                 Email
                 <br/>
-                <input type="text" name="email" onblur="verifMail(this)"/>
+                <input type="text" name="email" onkeypress="verifMail(this)"/>
                 <br/>
                 Mot de passe
                 <br/>
-                <input type="password" name="password" nblur="verifChamp(this)"/>
+                <input type="password" name="password" onblur="verifChamp(this)"/>
                 <br/>
                 Valider le mdp
                 <br/>
-                <input type="password" name="password2" nblur="verifChamp(this)"/>
+                <input type="password" name="password2" onblur="verifChamp(this)"/>
                 <br/>
                 Date d'anniversaire
                 <br/>
