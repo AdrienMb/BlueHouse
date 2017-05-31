@@ -40,7 +40,7 @@ function formulaire(){
                 <br/>
                 <input type="date" name="dateOfBirth" value="<?php echo date('Y-m-d'); ?>"/>
                 <br/>
-                Id de la maison <a href="#" class="info"><div class="infoq">?</div><span>Code recu lors de la commande</span></a>
+                Id de la maison
                 <br/>
                 <input type="text" name="idHouse" onblur="verifChamp(this)"/>
                 <br/>
