@@ -2,6 +2,7 @@
 include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/header.php");
  ?>
  <LINK href="/github/bluehouse/Styles/VueGenerale.css" rel="stylesheet" type="text/css">
+    <LINK href="/github/bluehouse/Styles/fond.css" rel="stylesheet" type="text/css">
  <html>
 
      <head>

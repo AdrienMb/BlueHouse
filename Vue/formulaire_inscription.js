@@ -22,7 +22,7 @@ function verifChamp(champ){
  }
 
  function verifMail(champ) {
-    var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+    var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,3}$/;
     if(!regex.test(champ.value)){
        surligne(champ, true);
        return false;
@@ -34,21 +34,15 @@ function verifChamp(champ){
  }
 
  function verifTel(champ){
-   if (preg_match("^0\d(\s|-)?(\d{2}(\s|-)?){4}$", champ.value))
-
-{
-    surligne(champ, false);
-    return true;
-
-}
-
-else
-
-{
-  surligne(champ, true);
-    return false;
-
-}
+   var tel = parseInt(champ.value);
+   if(isNaN(tel) || age < 0){
+      surligne(champ, true);
+      return false;
+   }
+   else{
+      surligne(champ, false);
+      return true;
+   }
 }
 
  function verifForm(f){
