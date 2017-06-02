@@ -8,3 +8,5 @@
 
           <ul class="affiche_pieces">
 <h3>Pièces de la maison :</h3>
+<div class="pieces">
+  <form method="post" action="/github/bluehouse/Controleur/gestion_capteurs.php">
