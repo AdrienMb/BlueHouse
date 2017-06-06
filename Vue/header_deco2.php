@@ -1,7 +1,10 @@
 <?php
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/commun.php");?>
 <!DOCTYPE html>
+<head>
 <LINK href="/github/bluehouse/Styles/flexbox.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="/github/bluehouse/images/favicon.png" />
+</head>
 <html>
     <header>
 

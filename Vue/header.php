@@ -2,7 +2,10 @@
 <?php
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/vue/commun.php");?>
 <!DOCTYPE html>
+<head>
 <LINK href="../Styles/flexbox.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="/github/bluehouse/images/favicon.png" />
+</head>
 <html>
 <header>
   <li class="li"><a href="/github/bluehouse/Vue/VueGenerale.php">Vue générale</a></li>
