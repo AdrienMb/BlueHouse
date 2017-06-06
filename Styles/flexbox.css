@@ -22,7 +22,7 @@ html, body {
 /* HEADER */
 header{
   position:relative;
-  top:10px;
+  top:0px;
   margin-top: -18px;
   height:63px;
   padding-top: 10px;

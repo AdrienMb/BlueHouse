@@ -5,7 +5,7 @@ function surligne(champ, erreur)
    if(erreur)
       champ.style.backgroundColor = "#fba";
    else
-      champ.style.backgroundColor = "";
+      champ.style.backgroundColor = "#6af663";
 }
 
 function verifChamp(champ){
@@ -22,7 +22,7 @@ function verifChamp(champ){
  }
 
  function verifMail(champ) {
-    var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,3}$/;
+    var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{1,4}$/;
     if(!regex.test(champ.value)){
        surligne(champ, true);
        return false;
@@ -34,8 +34,8 @@ function verifChamp(champ){
  }
 
  function verifTel(champ){
-   var tel = parseInt(champ.value);
-   if(isNaN(tel) || age < 0){
+   var regex = /^0[1-68]([0-9]{7,8})$/;
+   if(!regex.test(champ.value)){
       surligne(champ, true);
       return false;
    }
@@ -51,7 +51,7 @@ function verifChamp(champ){
     var phoneNumberOK = verifTel(f.phoneNumber);
     var mailOk = verifMail(f.email);
     var passwordOK = verifChamp(f.password);
-    var password2OK = verifChamp(f.password2);
+    var password2OK = verifChamp(f.password_2);
     var idHouseOK = verifChamp(f.idHouse)
 
 

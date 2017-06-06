@@ -4,7 +4,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/formulaire_inscription.
     // Controleur pour gérer le formulaire de connexion des utilisateurs
     if(isset($_GET['cible']) && $_GET['cible']=="verif") { // L'utilisateur vient de valider le formulaire de connexion
       $tab=getInput();
-      if($_POST['password']!=$_POST['password2']){
+      if($_POST['password']!=$_POST['password_2']){
         $erreur = "mot de passe non valide";
         include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/inscription_erreur.php");
       }

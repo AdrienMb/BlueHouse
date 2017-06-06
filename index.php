@@ -6,6 +6,7 @@ session_start(); ?>
 <link rel="stylesheet" type="text/css" href="/github/bluehouse/Styles/fond.css" />
 <html>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <title>Page d'accueil</title>
 </head>
 <body>

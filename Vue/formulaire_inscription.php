@@ -30,11 +30,13 @@ function formulaire(){
                 <br/>
                 Mot de passe
                 <br/>
-                <input type="password" name="password" onblur="verifChamp(this)"/>
+                <input type="password" name="password" />
                 <br/>
-                Valider le mdp
+                Valider le mot de passe
                 <br/>
-                <input type="password" name="password2" onblur="verifChamp(this)"/>
+                <input type="password" name="password_2" />
+                <label id="ok" style="display: none">Good</label>
+                <label id="faux" style="display: none">Bad</label>
                 <br/>
                 Date d'anniversaire
                 <br/>
@@ -42,8 +44,27 @@ function formulaire(){
                 <br/>
                 Id de la maison <a href="#" class="info"><div class="cercle"><div class="infoq">?</div></div><span>Code reçu lors de la commande</span></a>
                 <br/>
-                <input type="text" name="idHouse" onblur="verifChamp(this)"/>
+                <input type="text" name="idHouse" />
                 <br/>
+                <script>
+                $(document).ready(function(){
+                           $('input[name=password_2]').keyup(function() {
+
+                               var password1 = $('input[name=password]').val();
+                               var password2 = $('input[name=password_2]').val();
+                               if (password1 != password2){
+                                   $('#faux').show();
+                                   $('#ok').hide();
+                               }
+                               else{
+                                   $('#faux').hide();
+                                   $('#ok').show();
+                               }
+
+                           });
+                       });
+                </script>
+
 
                 <input type='submit'/>
             </form>
