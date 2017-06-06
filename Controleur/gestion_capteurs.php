@@ -30,12 +30,15 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
         }
 
         if(!empty($_POST['delete'])){
+          ?> <script>
+        var conf = confirm('Voulez vous vraiment supprimer cette pièce?');
+        </script>
+        <?php
+        if($confphp){
           delete_room($bdd,$_POST['delete']);
-          echo '<script language="Javascript">
-        <!--
-        document.location.replace("gestion_capteurs.php");
-        // -->
-        </script>';
+        }
+
+          
         }
 
 include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/fin_gestion_capteur.php");

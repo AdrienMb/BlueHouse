@@ -28,4 +28,9 @@
       $reponse->execute($tab);
       return $reponse;
   }
+
+  function delete_sensor($bdd,$id){
+    $reponse = $bdd->query('DELETE FROM sensor WHERE id="'.$id.'"');
+    return $reponse;
+  }
 ?>

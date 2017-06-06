@@ -26,4 +26,5 @@
   </fieldset>
 </div>
 </div>
+
 <div class="all_sensors">

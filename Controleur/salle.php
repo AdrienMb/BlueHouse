@@ -39,6 +39,18 @@ if(!empty($_POST['typeCapteur'])){
   // -->
   </script>';
 }
+if(!empty($_POST['delete'])){
+  ?> <script>
+var conf = confirm('Voulez vous vraiment supprimer ce capteur?');
+</script>
+<?php
+$confphp = "<script language='Javascript'> document.write(conf); </script>";
+if($confphp){
+  delete_sensor($bdd,$_POST['delete']);
+}
+
+
+}
 
  ?>
 
