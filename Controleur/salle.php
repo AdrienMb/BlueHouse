@@ -10,6 +10,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/datasensor.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/sensors.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/user.php");
+
 $id_house=get_idhouse($bdd,$id)->fetch();
 $sensor=get_sensors($bdd,$id_house['idHouse'],$_GET['idsalle'])->fetch();
 $sensors=explode(" ",$sensor['idSensors']);

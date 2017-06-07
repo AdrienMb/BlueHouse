@@ -18,11 +18,13 @@
   <fieldset>
 
     <h3>Ajouter un capteur :</h3>
+    <div class="formulaire">
       <form method="POST" action="/github/bluehouse/controleur/salle.php?idsalle=<?php print($_GET['idsalle'])?>">
           <input type="text" name="typeCapteur" placeholder="Type du capteur"/>
           <br/>
           <input type='submit'/>
       </form>
+    </div>
   </fieldset>
 </div>
 </div>

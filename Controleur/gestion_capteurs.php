@@ -33,8 +33,6 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
 
           delete_room($bdd,$_POST['delete']);
 
-
-
         }
 
 include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/fin_gestion_capteur.php");
