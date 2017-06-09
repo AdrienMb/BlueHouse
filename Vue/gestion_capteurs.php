@@ -6,6 +6,6 @@ echo "<a href =/github/bluehouse/controleur/salle.php?idsalle=".$nomPiece.">".$n
 
 
 <div class="bton">
-<input type="image" onclick="return confirm('Etes-vous sûr de vouloir supprimer cette entrée?');"name="delete" src="/github/bluehouse/Images/PETITE_POUBELLE.png" value=<?php echo $idpiece; ?> />
+<input type="image" onclick="return confirm('Etes-vous sûr de vouloir supprimer cette salle?');"name="delete" src="/github/bluehouse/Images/PETITE_POUBELLE.png" value=<?php echo $idpiece; ?> />
 
 </div></br>

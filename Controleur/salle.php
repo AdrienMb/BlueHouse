@@ -26,7 +26,7 @@ foreach($sensors as $i){
       $donnees="pas de données recueillis pour ce capteur";
       $k++;
     }
-    include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/affiche_capteurs.php");
+    require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/affiche_capteurs.php");
 }
 
 
@@ -40,17 +40,15 @@ if(!empty($_POST['typeCapteur'])){
   // -->
   </script>';
 }
+
 if(!empty($_POST['delete'])){
-  ?> <script>
-var conf = confirm('Voulez vous vraiment supprimer ce capteur?');
-</script>
-<?php
-$confphp = "<script language='Javascript'> document.write(conf); </script>";
-if($confphp){
+
   delete_sensor($bdd,$_POST['delete']);
-}
-
-
+  echo '<script language="Javascript">
+  <!--
+  document.location.replace("salle.php?idsalle='.$_GET['idsalle'].'");
+  // -->
+  </script>';
 }
 
  ?>
