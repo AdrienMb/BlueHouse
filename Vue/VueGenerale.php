@@ -39,7 +39,7 @@ include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/header.php");
          </label>
      </div>
      </div>
-
+        
          <p class="Volets"> Volets :  </p>
          <div class="centre">
          <div class="onoffswitch">

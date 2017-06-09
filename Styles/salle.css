@@ -88,9 +88,7 @@ input[type=submit], input[type=reset] {
  cursor:pointer;
  }
 
-input {
-  display:inline;
-}
+
  .bton {
    margin-bottom: -4px;
    height:20px;
