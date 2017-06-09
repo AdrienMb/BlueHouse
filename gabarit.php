@@ -20,13 +20,9 @@
                     echo($menu);
                     ?>
                 </div>
-                <div id="contenu">
-                </div>
             </div>
 
 
 
-            <div id="pied">
-            </div>
         </div>
 </html>
