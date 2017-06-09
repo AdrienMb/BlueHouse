@@ -1,7 +1,7 @@
 <script src="/github/bluehouse/Vue/vérification_Supression.js" type="text/javascript"></script>
 <title>Gestion des capteurs</title>
 <?php
-echo "<a href =/github/bluehouse/controleur/salle.php?idsalle=".$nomPiece.">".$nomPiece."</a>";
+echo "<a href ='/github/bluehouse/controleur/salle.php?idsalle=".$nomPiece."'>".$nomPiece."</a>";
 ?>
 
 
