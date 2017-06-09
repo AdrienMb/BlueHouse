@@ -30,7 +30,6 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
         }
 
         if(!empty($_POST['delete'])){
-
           delete_room($bdd,$_POST['delete']);
           header('Location: gestion_capteurs.php');
         }

@@ -7,8 +7,10 @@
 <?php
 echo ("<div class='date'>".$date."</div></br><div class='data'>".$type." : ".$donnees."</div>");
  ?>
+ <form method="POST" action="/github/bluehouse/controleur/salle.php?idsalle=<?php print($_GET['idsalle'])?>">
  <div class="bton">
    <input type="image" onclick="return confirm('Etes-vous sûr de vouloir supprimer ce capteur?');"name="delete" src="/github/bluehouse/Images/PETITE_POUBELLE.png" value=<?php echo $i; ?> />
 
  </div></br>
+ </form>
 </div>
