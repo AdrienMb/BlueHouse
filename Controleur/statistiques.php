@@ -1,11 +1,17 @@
 <LINK href="/github/bluehouse/Styles/flexbox.css" rel="stylesheet" type="text/css">
 <LINK href="/github/bluehouse/Styles/statistiques.css" rel="stylesheet" type="text/css">
 <?php
+session_start();
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/message.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/user.php");
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
+if(empty($_SESSION)){
+require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header_deco.php');
+require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/non_co.php');
+require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
+}
+else {
+  require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
-session_start();
 include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/dataSensor.php");
 $id = $_SESSION['userID'];
 $rep=get_idHouse($bdd,$id);
@@ -87,4 +93,4 @@ while($n_sensor >= 0){
 </div>
 <?php
 }
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
+require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');}

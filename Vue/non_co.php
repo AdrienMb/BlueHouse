@@ -1,10 +1,7 @@
+<LINK href="/github/bluehouse/Styles/non_co.css" rel="stylesheet" type="text/css">
+<br/>
+<div class="pasco">
 Connectez-vous pour accéder à cette page !
-<?php
-if($_SESSION==null){
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header_deco.php');
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/non_co.php');
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
-}
-else {
-
-}
+</div>
+<br/>
+<center><img class="chuck" src="/github/bluehouse/Images/chuck_norris.png" ></center>
