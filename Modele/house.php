@@ -27,4 +27,25 @@
     $req2->execute($tab);
     return $reponse;
   }
+
+  function delete_user_house($bdd, $id, $idHouse){
+    $resp = $bdd->query('SELECT idUsers FROM house WHERE id="'.$idHouse.'"');
+    $rep1 = $resp -> fetch();
+    $users=explode(" ",$rep1['idUsers']);
+    $nis = "";
+    foreach($users as $i){
+      echo $i." ".$id." lol ";
+      if($i != $id && $nis != ""){
+        $nis = $nis." ".$i;
+      }
+      else if($i != $id){
+        $nis = $i;
+      }
+    }
+    echo $nis;
+    $req3=$bdd->prepare('UPDATE house SET idUsers =? WHERE id =? ');
+    $tab=array($nis,$idHouse);
+    $req3->execute($tab);
+    return $resp;
+  }
 ?>

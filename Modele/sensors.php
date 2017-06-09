@@ -37,16 +37,16 @@
   function delete_sensor_room($bdd,$id_sensor,$id){
     $resp = $bdd->query('SELECT idSensors FROM room WHERE id="'.$id.'"');
     $rep1 = $resp -> fetch();
-    echo $rep1['idSensors'];
-    echo $id;
     $sensors=explode(" ",$rep1['idSensors']);
     $nis = "";
     foreach($sensors as $i){
-      if($i != $id_sensor){
+      if($i != $id_sensor && $nis != ""){
         $nis = $nis." ".$i;
       }
+      else if($i != $id_sensor){
+        $nis = $i;
+      }
     }
-    echo $nis;
     $req3=$bdd->prepare('UPDATE room SET idSensors =? WHERE id =? ');
     $tab=array($nis,$id);
     $req3->execute($tab);
