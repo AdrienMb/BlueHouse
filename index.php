@@ -1,5 +1,7 @@
 <?php
-session_start(); ?>
+session_start(); 
+$_SESSION = array();
+?>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="/github/bluehouse/styles/style.css" />
 <link rel="stylesheet" type="text/css" href="/github/bluehouse/styles/flexbox.css" />
