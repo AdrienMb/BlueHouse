@@ -26,12 +26,20 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
         require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/formulaire_piece.php");
         if(!empty($_POST['nomPiece'])){
           $rep=set_room($bdd,$_POST['nomPiece'],$idh['idHouse'])->fetch();
-          header('Location: gestion_capteurs.php');
+          echo '<script language="Javascript">
+          <!--
+          document.location.replace("gestion_capteurs.php");
+          // -->
+          </script>';
         }
 
         if(!empty($_POST['delete'])){
           delete_room($bdd,$_POST['delete']);
-          header('Location: gestion_capteurs.php');
+          echo '<script language="Javascript">
+          <!--
+          document.location.replace("gestion_capteurs.php");
+          // -->
+          </script>';
         }
 
 include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/fin_gestion_capteur.php");
