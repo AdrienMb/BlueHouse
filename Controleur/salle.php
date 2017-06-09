@@ -42,13 +42,11 @@ if(!empty($_POST['typeCapteur'])){
 }
 
 if(!empty($_POST['delete'])){
-
+  echo $_POST['delete'];
   delete_sensor($bdd,$_POST['delete']);
-  echo '<script language="Javascript">
-  <!--
-  document.location.replace("salle.php?idsalle='.$_GET['idsalle'].'");
-  // -->
-  </script>';
+  $id_room = get_roomId($bdd,$id_house,$_GET['idsalle']);
+  delete_sensor_room($bdd,$_POST['delete'],$id_room);
+
 }
 
  ?>
