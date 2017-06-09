@@ -2,18 +2,18 @@
 
     display: flex;
     flex-wrap : wrap;
-    width:100%;
-
     justify-content:center;
 
 }
 
+
 .BlockFlex {
+    margin-top: 5%;
    background-color:  rgba(255, 255, 255, 0.5);;
      /* For IE8 and earlier */
-    width: 400px;
+    width: 20%;
+    margin-right: 2%;
     height: -100px;
-    margin: 47px;
     border: none;
     min-height: 50vh;
     border-radius: 10px;
@@ -36,17 +36,18 @@
 }
 .ampoule {
     height :20px ;
-    width :160px  ;
+    width :80px  ;
     max-width: 100%;
     height: auto;
     margin-left: -5px;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 .lumiere {
     font-family: Comic Sans MS,Arial;
-    margin-left: 140px;
+    margin-left: 100px;
+    width:130px;
     margin-right: -100px;
-    margin-top: -150px;
+    margin-top: -120px;
     font-size: 25px;
 }
 .cadena {
@@ -68,7 +69,7 @@
     font-family: Comic Sans MS,Arial;
     margin-left: 140px;
     margin-right: -100px;
-    margin-top: -130px;
+    margin-top: -180px;
     font-size: 25px;
 }
 .alarme {
@@ -78,6 +79,7 @@
     height: auto;
     margin-left: 20px;
     margin-top: 80px;
+    margin-bottom: 15px;
 }
 .eteint {
     font-family: Comic Sans MS,Arial;
@@ -86,6 +88,7 @@
     margin-top: -90px;
     font-size: 25px;
 }
+/* boutons */
 
     .onoffswitch {
         position: relative; width: 78px;
@@ -135,7 +138,7 @@
     .centre{
         width: 60%;
         margin-left: 70%;
-        margin-top: -14%;
+        margin-top: -10px;
 
     }
 
