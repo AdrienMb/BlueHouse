@@ -43,6 +43,14 @@ session_start(); ?>
       ?>
       <?php
       require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/fin_accueilProp.php');
+      if(!empty($_POST['delete'])){
+        delete_user($bdd,$_POST['delete']);
+        echo '<script language="Javascript">
+      <!--
+      document.location.replace("accueil.php");
+      // -->
+      </script>';
+      }
       ?>
       <?php
     }
