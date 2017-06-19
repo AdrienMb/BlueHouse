@@ -1,17 +1,18 @@
 <?php
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/formulaire_inscription.php");
+require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/house.php");
 
     // Controleur pour gérer le formulaire de connexion des utilisateurs
     if(isset($_GET['cible']) && $_GET['cible']=="verif") { // L'utilisateur vient de valider le formulaire de connexion
+      $testHouse=verifyPd($bdd,$_POST['idHouse'],$_POST['passwordHouse']);
       $tab=getInput();
-      if($_POST['password']!=$_POST['password_2']){
+      if($_POST['password']!=$_POST['password_2'] || $testHouse){
         $erreur = "mot de passe non valide";
         include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/inscription_erreur.php");
       }
       else{
       //  if(!empty($_POST['lastName']) && !empty($_POST['firstName'])){ // L'utilisateur a rempli tous les champs du formulair
             include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/user.php");
-            include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Modele/house.php");
             if(validEmail($_POST['email'])){
               $reponse = emailUnique($bdd,$_POST['email']);
               if($reponse->rowcount()==0){  // Email unique, on affiche la page

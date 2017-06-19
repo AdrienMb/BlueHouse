@@ -45,6 +45,11 @@ function formulaire(){
                 Id de la maison <a href="#" class="info"><div class="cercle"><div class="infoq">?</div></div><span>Code reçu lors de la commande</span></a>
                 <br/>
                 <input type="text" name="idHouse" />
+
+                <br/>
+                Mot de passe de la maison
+                <br/>
+                <input type="text" name="passwordHouse" />
                 <br/>
                 <script>
                 $(document).ready(function(){
@@ -76,6 +81,7 @@ function formulaire(){
 }
 
 function getInput(){
+
   $tab=array($_POST['lastName'], $_POST['firstName'], $_POST['sexe'], $_POST['phoneNumber'], $_POST['email'], $_POST['password'], $_POST['dateOfBirth'], $_POST['idHouse']);
   return $tab;
 }
