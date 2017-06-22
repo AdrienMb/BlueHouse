@@ -5,8 +5,13 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/house.php");
     // Controleur pour gérer le formulaire de connexion des utilisateurs
     if(isset($_GET['cible']) && $_GET['cible']=="verif") { // L'utilisateur vient de valider le formulaire de connexion
       $testHouse=verifyPd($bdd,$_POST['idHouse'],$_POST['passwordHouse']);
+      if($testHouse){
+        $erreur = "Mot de passe de la maison incorrect";
+        include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/inscription_erreur.php");
+      }
+      else{
       $tab=getInput();
-      if($_POST['password']!=$_POST['password_2'] || $testHouse){
+      if($_POST['password']!=$_POST['password_2']){
         $erreur = "mot de passe non valide";
         include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/inscription_erreur.php");
       }
@@ -46,6 +51,7 @@ document.location.replace("controleur/accueil.php");
             include("Vue/connexion_erreur.php");
         }*/
     }
+  }
   }
     else { // La page de connexion par défaut
         include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/non_connecte.php");

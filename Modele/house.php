@@ -31,10 +31,8 @@
         $reponse = $bdd->query('SELECT password FROM house WHERE id="'.$id.'"');
         $ligne = $reponse->fetch();
         if($password!=$ligne['password']){ // Le mot de passe entré ne correspond pas à celui stocké dans la base de données
-                    $erreur = "Mot de passe de la maison incorrect";
-                    include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/connexion_erreur.php");
                     return true;
-                } 
+                }
         else {
             return false;
         }
