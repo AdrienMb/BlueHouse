@@ -1,4 +1,5 @@
 <?php
+require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Modele/connexion.php');
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Modele/dataSensor.php');
 require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Modele/nbtrame.php');
 $ch = curl_init();
@@ -15,7 +16,6 @@ $size = count($data_tab);
 $init = get_nb($bdd);
 set_nb($bdd,$size);
 for($i=$init; $i<$size; $i++){
-echo "Trame $i: $data_tab[$i]<br />";
 $string = $data_tab[$i];
 $typeTrame = $string[0];
 $group = $string[1].$string[2].$string[3].$string[4];

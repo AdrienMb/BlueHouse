@@ -8,8 +8,7 @@
     function set_nb($bdd,$n){
       $req=$bdd->prepare('UPDATE nbtrame SET nbtrame =?');
       $tab=array($n);
-      $req->execute($tab)
-      return $req;
+      $req->execute($tab);
     }
 
 ?>
