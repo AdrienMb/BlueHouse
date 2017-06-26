@@ -16,7 +16,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/vue/commun.php");?>
 
 
         <a href="/github/bluehouse/Controleur/accueil.php" class="logoLink"> <img class="logo" src="../Images/logo.png" alt="logo Blue House" /></a>
-        <li class="li"><a href="/github/bluehouse/Vue/VueGenerale.php">Vue générale</a></li>
+        <li class="li"><a href="/github/bluehouse/Controleur/VueGenerale.php">Vue générale</a></li>
         <li class="li"><a href="/github/bluehouse/controleur/gestion_capteurs.php">Gestion des capteurs</a></li>
         <li class="li"><a href="/github/bluehouse/Controleur/statistiques.php">Statistiques</a></li>
         <li class="li"><a href="/github/bluehouse/Controleur/message.php">Notes</a></li>
