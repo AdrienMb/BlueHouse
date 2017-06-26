@@ -12,7 +12,6 @@ require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
 else {
   require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/header.php');
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
-include($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/dataSensor.php");
 $id = $_SESSION['userID'];
 $rep=get_idHouse($bdd,$id);
 $idh = $rep->fetch();

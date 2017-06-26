@@ -7,7 +7,6 @@ $id=$_SESSION['userID'];
 <?php
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/Vue/salle.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/room.php");
-require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/datasensor.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/sensors.php");
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/modele/user.php");
 
