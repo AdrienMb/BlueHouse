@@ -13,7 +13,8 @@ $data = curl_exec($ch);
 curl_close($ch);
 $data_tab = str_split($data,33);
 $size = count($data_tab);
-$init = get_nb($bdd);
+$initi = get_nb($bdd)->fetch();
+$init = $initi['nbtrame'];
 set_nb($bdd,$size);
 for($i=$init; $i<$size; $i++){
 $string = $data_tab[$i];
