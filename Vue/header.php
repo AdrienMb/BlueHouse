@@ -1,5 +1,6 @@
 
 <?php
+require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Controleur/gestion_trames.php');
 require($_SERVER["DOCUMENT_ROOT"]."/github/bluehouse/vue/commun.php");?>
 <!DOCTYPE html>
 <head>
