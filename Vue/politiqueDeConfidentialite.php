@@ -109,7 +109,3 @@ Nous collectons les renseignements suivants :
 </div>
 </body>
 </html>
-<?php
-require($_SERVER["DOCUMENT_ROOT"].'/github/bluehouse/Vue/footer.php');
-
-?>

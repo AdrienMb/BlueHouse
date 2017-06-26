@@ -5,5 +5,10 @@
         return $reponse;
     }
 
+    function set_trame($bdd,$idSensor,$type,$receptionDate,$data){
+      $req=$bdd->prepare('INSERT INTO datasensor(idSensor, type, receptionDate, data) VALUES(?,?,?,?)');
+      $tab=array($idSensor,$type,$receptionDate,$data);
+      $req->execute($tab);
+    }
 
 ?>
