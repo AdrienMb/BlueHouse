@@ -6,18 +6,17 @@ $ch = curl_init();
 curl_setopt(
 $ch,
 CURLOPT_URL,
-"http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=006B");
+"http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=6B6B");
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 $data = curl_exec($ch);
 curl_close($ch);
 $data_tab = str_split($data,33);
-$size = count($data_tab);
 $initi = get_nb($bdd)->fetch();
 $init = $initi['nbtrame'];
-set_nb($bdd,$size);
-for($i=$init; $i<$size; $i++){
+for($i=0, $size=count($data_tab); $i<$size; $i++){
 $string = $data_tab[$i];
+if(strlen($string) == 33){
 $typeTrame = $string[0];
 $group = $string[1].$string[2].$string[3].$string[4];
 $request = $string[5];
@@ -67,4 +66,6 @@ $receptionDate = $dateTrame[0].$dateTrame[1].$dateTrame[2].$dateTrame[3]."-".$da
 $receptionDate = $receptionDate.":".$dateTrame[11].$dateTrame[12];
 set_trame($bdd,$numSensor,$type,$receptionDate,$valueSensor);
 }
+}
+set_nb($bdd,$size);
 ?>
