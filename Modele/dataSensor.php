@@ -1,7 +1,12 @@
 <?php
 
     function get_dataWithDate($bdd,$idSensor){
-        $reponse = $bdd->query('SELECT data,receptionDate,type FROM datasensor WHERE idSensor="'.$idSensor.'"');
+        $datess=$bdd->query('SELECT max(receptionDate) from datasensor WHERE idSensor="'.$idSensor.'"');
+        $dates=$datess->fetch();
+        $date=$dates['max(receptionDate)'];
+        $reponse = $bdd->prepare('SELECT data,receptionDate,type FROM datasensor WHERE idSensor=? AND receptionDate=?');
+        $tab=array($idSensor,$date);
+        $reponse->execute($tab);
         return $reponse;
     }
 
