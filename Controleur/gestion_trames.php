@@ -12,8 +12,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 $data = curl_exec($ch);
 curl_close($ch);
 $data_tab = str_split($data,33);
-$initi = get_nb($bdd)->fetch();
-$init = $initi['nbtrame'];
+$lastDate = get_lastDate($bdd)->fetch();
 for($i=0, $size=count($data_tab); $i<$size; $i++){
 $string = $data_tab[$i];
 if(strlen($string) == 33){
@@ -64,8 +63,9 @@ switch ($typeSensor) {
 }
 $receptionDate = $dateTrame[0].$dateTrame[1].$dateTrame[2].$dateTrame[3]."-".$dateTrame[4].$dateTrame[5]."-".$dateTrame[6].$dateTrame[7]." ".$dateTrame[8].$dateTrame[9].":".$dateTrame[9].$dateTrame[10];
 $receptionDate = $receptionDate.":".$dateTrame[11].$dateTrame[12];
-set_trame($bdd,$numSensor,$type,$receptionDate,$valueSensor);
+if($receptionDate > $lastDate['max(receptionDate)']){
+  set_trame($bdd,$numSensor,$type,$receptionDate,$valueSensor);
 }
 }
-set_nb($bdd,$size);
+}
 ?>

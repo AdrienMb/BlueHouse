@@ -11,4 +11,10 @@
       $req->execute($tab);
     }
 
+
+        function get_lastDate($bdd){
+          $rep=$bdd->query('SELECT max(receptionDate) FROM datasensor');
+          return $rep;
+        }
+
 ?>
